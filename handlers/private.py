@@ -17,17 +17,17 @@ Gruba ekle!**
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 DESTEK İLETİŞİM 🛠", url="https://t.me/bosswolff")
+                        "🙋‍♂️ Beni Grubuna Ekle", url="https://t.me/bosswolff")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Komutlar" , url = "https://t.me/sohbetkuslari"
+                        "🎶 Mp3 botu" , url = "https://t.me/Mp3_aramaBot"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Asistan Gruba ekle yoksa çalışmaz" , url = "https://t.me/seslisohbetmuzik"""
+                        "🎙️Asistanım " , url = "https://t.me/TaliaMusicAsistant"""
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "🇹🇷 Geliştirici 🇹🇷", url="https://t.me/bosswolff"
+                        "📣 Tagger Bot", url="https://t.me/Mentiondavet_bot"
                     )]
             ]
         ),
