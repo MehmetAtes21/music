@@ -37,7 +37,7 @@ Beni grubunuza ekleyin ve özgürce müzik çalın 😆!**
      disable_web_page_preview=True
     )
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
-async def gstart(_, message: Message):
+async def start(_, message: Message):
       await message.reply_text("""**Yeniden başlatıldı sorunsuz çalışıyor ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
