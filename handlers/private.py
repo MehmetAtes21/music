@@ -7,11 +7,11 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_sticker("CAACAgQAAx0CTv65QgABBfJlYF6VCrGMm6OJ23AxHmD6qUSWESsAAhoQAAKm8XEeD5nrjz5IJFYeBA")
+    await message.reply_sticker("https://i.ibb.co/khRz42f/Turkish-Voice.jpg")
     await message.reply_text(
-        f"""**selam, {bn} 🎵
+        f"""**Merhaba, {bn} 🎵
 
-Sesli sohbette müzik botu. Ban yetkisiz ses yönetimi yetkisi verip asistanı gruba ekle  Geliştirici [BOSS](https://t.me/bosswolff).
+Sesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz. Düzen Tasarım [Talia Müzik 🎙️](https://t.me/Sohbetdestek).
 
 Gruba ekle!**
         """,
@@ -19,17 +19,17 @@ Gruba ekle!**
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 DESTEK İLETİŞİM 🛠", url="https://t.me/bosswolff")
+                        "🏷️ Destek Kanalı", url="https://t.me/Sohbetdestek")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Komutlar" , url = "https://t.me/sohbetkuslari"
+                        "📣 Tagger Bot" , url = "https://t.me/Mentiondavet_bot"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Asistan Gruba ekle yoksa çalışmaz" , url = "https://t.me/seslisohbetmuzik"""
+                        "🔊 Asistan" , url = "https://t.me/taliamusicasistant"""
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "🇹🇷 Geliştirici 🇹🇷", url="https://t.me/bosswolff"
+                        "🎶 Mp3 Botu", url="https://t.me/Mp3_aramaBot"
                     )]
             ]
         ),
@@ -43,7 +43,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Sahip", url="https://t.me/bosswolff")
+                        "🔊 Sahip", url="https://t.me/Mahoaga")
                 ]
             ]
         )
