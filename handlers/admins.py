@@ -21,7 +21,7 @@ async def pause(_, message: Message):
         await message.reply_text("❗ Hiçbir şey çalmıyor!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text("▶️ **Müzik duraklatıldı!**\n\n• Müzik kullanımına devam etmek için komut» /resume**") 
+        await message.reply_text("▶️ **Müzik duraklatıldı!**\n\n• Müzik kullanımına devam etmek için **komut » resume**") 
 
 
 @Client.on_message(command("resume") & other_filters)
@@ -36,7 +36,7 @@ async def resume(_, message: Message):
         await message.reply_text("❗ Hiçbir şey duraklatılmadı!")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
-        await message.reply_text("⏸ **Müzik devam ediyor!**\n\n• Kullanımı duraklatmak için komut » /pause**")
+        await message.reply_text("⏸ **Müzik devam ediyor!**\n\n• Kullanımı duraklatmak için **komut » /pause**")
 
 
 @Client.on_message(command("end") & other_filters)
@@ -60,7 +60,7 @@ async def stop(_, message: Message):
 @authorized_users_only
 async def skip(_, message: Message):
     if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ Atlanacak müzik yok!")
+        await message.reply_text("❗ Atlatılacak müzik yok!")
     else:
         callsmusic.queues.task_done(message.chat.id)
 
