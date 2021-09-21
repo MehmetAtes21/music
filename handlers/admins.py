@@ -21,7 +21,7 @@ async def pause(_, message: Message):
         await message.reply_text("❗ Hiçbir şey çalmıyor!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text("▶️ duraklatıldı!") 
+        await message.reply_text("▶️ **Müzik duraklatıldı!**\n\n• Müzik kullanımına devam etmek için komut» /resume**") 
 
 
 @Client.on_message(command("resume") & other_filters)
@@ -72,4 +72,4 @@ async def skip(_, message: Message):
                 callsmusic.queues.get(message.chat.id)["file"]
             )
 
-        await message.reply_text("⏭️ **__Şarkıyı bir sonraki kuyruğa atla__**")
+        await message.reply_text("⏭️ **__Şarkı bir sonraki kuyruğa atlatıldı__**")
