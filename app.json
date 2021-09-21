@@ -1,0 +1,39 @@
+{
+  "name": "Music Bot",
+  "description": "Telegram'ınızın Grup Sesli Sohbeti'nde şarkı çalmak için Açık Kaynaklı bot. Powered by Mehmetbaba55.",
+  "keywords": ["music", "voicechat", "telegram"],
+  "repository": "https://github.com/Mehmetbaba55/MehmetBabaMusicVave",
+  "stack": "container",
+  "env": {
+    "SESSION_NAME": {
+      "description": "Pyrogram oturum dizesi",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bir bot belirteci @BotFather",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "MusicPlayer Bot Adınız.",
+      "required": false,
+      "value": ""
+    },
+    "API_ID": {
+      "description": "my.telegram'dan uygulama kimliği.org/apps",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "My.telegram'dan uygulama apı-hash.org/apps",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "Her yerde yönetici olarak sayılan kullanıcı kimliklerinin listesi (Müzik hesabınının id'si).",
+      "required": true
+    },
+    "DURATION_LIMIT": {
+      "description": "İndirmeler için en fazla ses süresi sınırı (minutes).",
+      "required": true,
+      "value": "55"
+    }
+  }
+}
