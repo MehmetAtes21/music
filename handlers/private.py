@@ -17,7 +17,7 @@ Gruba ekle!**
             [
                 [
                     InlineKeyboardButton(
-                        "🙋‍♂️ Beni Grubuna Ekle", url="https://t.me/bosswolff")
+                        "🙋‍♂️ Beni Grubuna Ekle", url="https://t.me/Efsanestar_bot?startgroup=true"
                   ],[
                     InlineKeyboardButton(
                         "🎶 Mp3 botu" , url = "https://t.me/Mp3_aramaBot"
