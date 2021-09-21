@@ -21,7 +21,7 @@ async def pause(_, message: Message):
         await message.reply_text("❗ Hiçbir şey çalmıyor!")
     else:
         callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text("▶️ Duraklatıldı!")
+        await ("▶️ **Müzik duraklatıldı!**\n\n• Müzik kullanımına devam etmek için **komut» /resume**") 
 
 
 @Client.on_message(command("resume") & other_filters)
