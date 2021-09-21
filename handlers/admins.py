@@ -73,5 +73,5 @@ async def skip(_, message: Message):
                 callsmusic.queues.get(message.chat.id)["file"]
             )
 
-        await message.reply_text(f"⏭️ **__Şarkıyı bir sonraki kuyruğa atlatıldı__**")
+        await message.reply_text("⏭️ **__Şarkıyı bir sonraki kuyruğa atlatıldı__**")
 
