@@ -38,15 +38,13 @@ Beni grubunuza ekleyin ve özgürce müzik çalın 😆!**
     )
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**Bot Çalışıyor Sorun Yok**""",
+      await message.reply_text("""**Yeniden başlatıldı sorunsuz çalışıyor ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🛡 Kanal 🛡", url="https://t.me/Sohbetdestek")
+                        "🔊 Sahip", url="https://t.me/Mahoaga")
                 ]
             ]
         )
    )
-
-
