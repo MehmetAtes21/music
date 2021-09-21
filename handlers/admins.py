@@ -36,7 +36,7 @@ async def resume(_, message: Message):
         await message.reply_text("❗ Hiçbir şey duraklatılmadı!")
     else:
         callsmusic.pytgcalls.resume_stream(message.chat.id)
-        await message.reply_text("⏸ Devam etti!")
+        await message.reply_text("⏸ **Müzik devam ediyor!**\n\n• Kullanımı duraklatmak için **komut » /pause**")
 
 
 @Client.on_message(command("end") & other_filters)
@@ -52,7 +52,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text("❌ Akış durduruldu!")
+        await message.reply_text("✅ **Müzik durduruldu!**\n\n• **Userbot'un sesli sohbet bağlantısı kesildi**")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -72,4 +72,4 @@ async def skip(_, message: Message):
                 callsmusic.queues.get(message.chat.id)["file"]
             )
 
-        await message.reply_text("➡️ Sıradaki şarkıya atlandı!")
+        await message.reply_text("⏭️ **__Şarkıyı bir sonraki kuyruğa atla__**")
