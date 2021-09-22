@@ -28,7 +28,7 @@
 - `/skip` - sonraki şarkıyı çal 
 - `/end` - müzik çalmayı durdurma
 
-#### Grubunuza Katılması için
+#### Grubunuza Almak için.. 
 - `/katil` - Müzik asistanı  grubunuza katılır. 
 - `/ayril` - Müzik asistanı grubunuzu terk eder. 
 ### Kahramanıma Dağıt 🚀</h4>
