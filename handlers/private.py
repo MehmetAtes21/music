@@ -22,7 +22,7 @@ Gruba ekle!**
                         "🏷️ Destek Kanalı", url="https://t.me/Sohbetdestek")
                   ],[
                     InlineKeyboardButton(
-                        "📣 Tagger Bot" , url = "https://t.me/Mentiondavet_bot"
+                        "📣 Tagger Bot" , url = "https://t.me/UserEtiketBot"
                     ),
                     InlineKeyboardButton(
                         "🔊 Asistan" , url = "https://t.me/taliamusicasistant"""
