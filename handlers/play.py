@@ -68,13 +68,13 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     img = Image.open("temp.png")
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype("etc/font.otf", 32)
-    draw.text((190, 550), f"Title: {title}", (255, 255, 255), font=font)
+    draw.text((190, 550), f"Parça İsmi: {title}", (255, 255, 255), font=font)
     draw.text(
-        (190, 590), f"Duration: {duration}", (255, 255, 255), font=font
+        (190, 590), f"Parçanın süresi: {duration}", (255, 255, 255), font=font
     )
-    draw.text((190, 630), f"Views: {views}", (255, 255, 255), font=font)
+    draw.text((190, 630), f"Görüntülenme sayısı: {views}", (255, 255, 255), font=font)
     draw.text((190, 670),
-        f"Added By: {requested_by}",
+        f"Oynatılıyor: {requested_by}",
         (255, 255, 255),
         font=font,
     )
@@ -193,7 +193,7 @@ async def play(_, message: Message):
                             text="YouTube 🎬",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="Download 📥",
+                            text="İndir 📥",
                             url=f"{durl}")
 
                     ]
@@ -223,10 +223,10 @@ async def play(_, message: Message):
     else:
         if len(message.command) < 2:
             return await lel.edit("🧐 **Söylemek istediğin şarkı nedir?**")
-        await lel.edit("🔎 **ꜱᴀʀᴋɪʏɪ ʙᴜʟᴍᴀ...**")
+        await lel.edit("🔎 **Lütfen bekleyiniz...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🎵 **işʟᴇᴍᴇ ʙᴀşᴀʀɪʏʟᴀ ᴀʟɪɴᴅɪ...**")
+        await lel.edit("🔁 **Sesler İşleniyor..🔥**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -261,7 +261,7 @@ async def play(_, message: Message):
                             text="YouTube 🎬",
                             url=f"{url}"),
                         InlineKeyboardButton(
-                            text="Download 📥",
+                            text="İndir 📥",
                             url=f"{durl}")
 
                     ]
