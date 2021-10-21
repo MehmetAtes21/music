@@ -3,7 +3,7 @@ TgCrypto
 py-tgcalls==0.5.5
 python-dotenv
 youtube_dl
-youtube_search_python
+youtube_search_python==1.4.6 
 requests
 aiohttp
 aiofiles
