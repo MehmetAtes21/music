@@ -20,7 +20,6 @@
       "description": "MusicPlayer Bot Kullanıcı Adınız.",
       "required": true,
       "value": ""
-
     },
     "API_ID": {
       "description": "my.telegram'dan uygulama kimliği.org/apps",
