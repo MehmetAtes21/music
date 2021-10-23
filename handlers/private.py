@@ -10,7 +10,8 @@ async def start(_, message: Message):
     await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg")
     await message.reply_text(
         f"""**Merhaba, {bn} 🎵
-Sesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.**""",
+Sesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz. Düzen Tasarım [Talia Müzik 🎙️](https://t.me/Sohbetdestek).
+ **""",
 
         reply_markup=InlineKeyboardMarkup(
             [
