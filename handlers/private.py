@@ -10,43 +10,45 @@ async def start(_, message: Message):
     await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg")
     await message.reply_text(
         f"""**Merhaba, {bn} 🎵
+Sesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz.**""",
 
-Sesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi verip, Asistanı gruba ekleyiniz. Düzen Tasarım [Talia Müzik 🎙️](https://t.me/Sohbetdestek).
-
-Gruba ekle!**
-        """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🏷️ Destek Kanalı", url="https://t.me/Sohbetdestek")
-                  ],[
-                    InlineKeyboardButton(
-                        "📣 Tagger Bot" , url = "https://t.me/UserEtiketBot"
+                        "🏷️ Destek Grubu", url="https://t.me/Sohbetdestek"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Asistan" , url = "https://t.me/taliamusicasistant"""
+                        "🔧 Yardımcı", url = "https://t.me/Bir_Beyfendi"
+                    )
+                  ],[
+                    InlineKeyboardButton(
+                        "🛠 Kurucu" , url = "https://t.me/Mahoaga"
+                    ),
+                    InlineKeyboardButton(
+                        "🔊 Asistan" , url = "https://t.me/TaliaMusicAsistant"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "🎶 Mp3 Botu", url="https://t.me/Mp3_aramaBot"
+                        "🌀 Komutlar" , url = "https://telegra.ph/Komutlar-10-22"
+                    ),
+                    InlineKeyboardButton(
+                        "🎮 Oyun Botu", url="https://t.me/BasitOyunBot"
                     )]
             ]
         ),
      disable_web_page_preview=True
     )
 
-@Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
-async def gstart(_, message: Message):
-      await message.reply_text("""**Yeniden başlatıldı sorunsuz çalışıyor ✅**""",
+@Client.on_message(filters.command("reload") & ~filters.private & ~filters.channel)
+async def reload(_, message: Message):
+      await message.reply_text("""**Yeniden başlatıldı. Bot çalışıyor ✅**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Sahip", url="https://t.me/Mahoaga")
+                        "⚙ Geliştirici", url="https://t.me/Mahoaga")
                 ]
             ]
         )
    )
-
-
