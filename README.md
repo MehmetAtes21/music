@@ -39,4 +39,4 @@
 
 #### [SESSION ALMAK İÇİN TIKLA](https://t.me/Sitringsison_bot)
 ---------------------- 
-### 30 Ekim Cumartesi saat: 02:42 - Güncel ve Seri çalışıyor... 🤫 Sorunlar Giderildi... (song-bul) Komutu hızlandırılmış oldu. 
+### 30 Ekim Cumartesi saat: 02:42 - Güncel ve Seri çalışıyor... 🤫 Sorunlar Giderildi... (song-bul) 
