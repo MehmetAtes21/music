@@ -10,6 +10,7 @@ aiofiles
 asyncio
 youtube_search
 search_engine_parser
+wget 
 ffmpeg
 Pillow
 ujson
