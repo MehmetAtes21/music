@@ -16,11 +16,11 @@ import pyrogram
 
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
-@app.on_message(pyrogram.filters.command(["search"]))
-async def ytsearch(_, message: Message):
+@app.on_message(pyrogram.filters.command(["ara"]))
+async def ytara(_, message: Message):
     try:
         if len(message.command) < 2:
-            await message.reply_text("/aramanın bağımsız değişkene ihtiyacı var!")
+            await message.reply_text("Aramanın bağımsız değişkene ihtiyacı var!")
             return
         query = message.text.split(None, 1)[1]
         m = await message.reply_text("Searching....")
