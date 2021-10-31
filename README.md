@@ -19,10 +19,12 @@
 - `/play` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
 - `/play <song name>` - istediğiniz şarkıyı çal
 - `/ytplay <Sorgu>` - youtube üzerinden çalma
-- `/song <song name>` - istediğiniz şarkıları hızlı bir şekilde indirin 
-- `/search <query>` - youtube'da ayrıntıları içeren videoları arama
+- `/bul <song name>` - istediğiniz şarkıları hızlı bir şekilde indirin 
+- `/arama <query>` - youtube'da ayrıntıları içeren videoları arama
 
 #### Yalnızca yöneticiler 
+- `/ver` - üyeler için extra yetki 
+- `/al` - üyeler için verilen yetki alınır (Herkes için olan komutları kullanır) 
 - `/pause` - şarkı çalmayı duraklatma 
 - `/resume` - şarkı çalmaya devam et 
 - `/skip` - sonraki şarkıyı çal 
