@@ -22,7 +22,7 @@ Sesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi v
                 ],
                 [
                     InlineKeyboardButton(
-                        "🔊 Asistan", url="https://t.me/Maxmusic_Asistan" 
+                        "🔊 Asistan", url="https://t.me/Efsanestar_bot" 
                     ),
                     InlineKeyboardButton(
                         "💬 Sohbet", url="https://t.me/Sohbetskyfall"
