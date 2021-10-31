@@ -4,6 +4,7 @@ from pyrogram import Client
 from pyrogram.types import Message
 from callsmusic import callsmusic
 from cache.admins import admins
+
 from config import BOT_NAME as BN
 from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
@@ -75,9 +76,9 @@ async def skip(_, message: Message):
         await message.reply_text("⏭️ **__Şarkı bir sonraki kuyruğa atlatıldı__**")
 
 
-# Yetki Vermek için (ver) Yetki almak için (al) komutlarını ekledim. Helpers dosyasının modüllerini kontrol ediniz.
+# Yetki Vermek için (ver) Yetki almak için (al) komutlarını ekledim.
 # Gayet güzel çalışıyor. @Mahoaga Tarafından Eklenmiştir. 
-@Client.on_message(filters.command("ver"))
+@Client.on_message(command("ver") & other_filters)
 @authorized_users_only
 async def authenticate(client, message):
     global admins
@@ -93,7 +94,7 @@ async def authenticate(client, message):
         await message.reply("✔ Kullanıcı Zaten Yetkili!")
 
 
-@Client.on_message(filters.command("al"))
+@Client.on_message(command("al") & other_filters)
 @authorized_users_only
 async def deautenticate(client, message):
     global admins
@@ -108,6 +109,7 @@ async def deautenticate(client, message):
     else:
         await message.reply("✔ Kullanıcının yetkisi alındı!")
 
+
 # Sesli sohbet için 0-200 arası yeni komut eklenmiş oldu. 
 @Client.on_message(command(["ses"]) & other_filters)
 @authorized_users_only
@@ -119,6 +121,7 @@ async def change_ses(client, message):
        await message.reply(f"✅ **Birim olarak ayarlandı:** ```{range}%```")
     except Exception as e:
        await message.reply(f"**hata:** {e}")
+
 
 # Sohbet grubunuzda bilgi yazarak bilgi alınız. Diger botların komutu (help) sorun olmasın diye (bilgi) yapıldı. 
 @Client.on_message(
