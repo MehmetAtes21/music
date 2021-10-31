@@ -18,7 +18,7 @@ from pyrogram.types import Message
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
 
-from config import BOT_USERNAME as BN
+from config import BOT_USERNAME as bn
 from helpers.decorators import humanbytes
 from helpers.filters import command
 
