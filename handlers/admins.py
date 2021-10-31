@@ -124,8 +124,14 @@ async def change_ses(client, message):
 
 
 # Sistemin Kendi Yönetici Ön Bellegi Yenilemesi İçin.. 
-@Client.on_message(command("reload") & other_filters 
-@errors
-async def reload(client, message: Message):
-    set(message.chat.id, [member.user for member in await message.chat.get_members(filter="administrators")])
-    await message.reply_text("✯ Talia-Efsane-Music ✯=❇️ Yönetici ön belleği yenilendi!")
+@Client.on_message(command("reload"))
+async def update_admin(client, message: Message):
+    chat_id = get_chat_id(message.chat)
+    set(
+        chat_id,
+        [
+            member.user
+            for member in await message.chat.get_members(filter="administrators")
+        ],
+    )
+    await message.reply_text("👮‍♂️ Yönetici önbelleği yenilendi!")
