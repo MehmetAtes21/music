@@ -6,20 +6,20 @@
   "stack": "container",
   "env": {
     "SESSION_NAME": {
-      "description": "Pyrogram oturum dizesi",
+      "description": "Pyrogram oturum dizesi (Replit.com)",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "Bir bot belirteci @BotFather",
+      "description": "Bir bot belirteci @botfather ile alınız",
       "required": true
     },
     "BOT_NAME": {
-      "description": "MusicPlayer Bot Adınız.",
+      "description": "Müzik Oynatıcı Bot Adınız.",
       "required": false,
       "value": ""
     },
     "BOT_USARNAME": {
-      "description": "MusicPlayer Bot Kullanıcı Adınız.",
+      "description": "Müzik Oynatıcı Bot Kullanıcı İsmi @ olmadan yazınız.",
       "required": true,
       "value": ""
     },
