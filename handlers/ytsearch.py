@@ -1,4 +1,4 @@
-# the logging things
+# Size linkler halinde arar. 
 import logging
 
 from pyrogram.types import Message
