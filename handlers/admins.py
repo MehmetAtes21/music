@@ -1,12 +1,12 @@
 from asyncio.queues import QueueEmpty
-from helpers.import get_chat_id
+from helpers.channelmusic import get_chat_id
 
 from pyrogram import Client
 from pyrogram.types import Message
 from callsmusic import callsmusic
 from cache.admins import admins
 from pyrogram import filters
-from callsmusic.admins import set
+from cache.admins import set
 
 from config import BOT_NAME as BN
 from helpers.filters import command, other_filters
