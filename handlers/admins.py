@@ -75,6 +75,52 @@ async def skip(_, message: Message):
         await message.reply_text("⏭️ **__Şarkı bir sonraki kuyruğa atlatıldı__**")
 
 
+# Yetki Vermek için (ver) Yetki almak için (al) komutlarını ekledim. Helpers dosyasının modüllerini kontrol ediniz.
+# Gayet güzel çalışıyor. @Mahoaga Tarafından Eklenmiştir. 
+@Client.on_message(filters.command("ver"))
+@authorized_users_only
+async def authenticate(client, message):
+    global admins
+    if not message.reply_to_message:
+        await message.reply("Kullanıcıya Yetki Vermek için yanıtlayınız!")
+        return
+    if message.reply_to_message.from_user.id not in admins[message.chat.id]:
+        new_admins = admins[message.chat.id]
+        new_admins.append(message.reply_to_message.from_user.id)
+        admins[message.chat.id] = new_admins
+        await message.reply("kullanıcı yetkili.")
+    else:
+        await message.reply("✔ Kullanıcı Zaten Yetkili!")
+
+
+@Client.on_message(filters.command("al"))
+@authorized_users_only
+async def deautenticate(client, message):
+    global admins
+    if not message.reply_to_message:
+        await message.reply("✘ Kullanıcıyı yetkisizleştirmek için mesaj atınız!")
+        return
+    if message.reply_to_message.from_user.id in admins[message.chat.id]:
+        new_admins = admins[message.chat.id]
+        new_admins.remove(message.reply_to_message.from_user.id)
+        admins[message.chat.id] = new_admins
+        await message.reply("kullanıcı yetkisiz")
+    else:
+        await message.reply("✔ Kullanıcının yetkisi alındı!")
+
+# Sesli sohbet için 0-200 arası yeni komut eklenmiş oldu. 
+@Client.on_message(command(["ses"]) & other_filters)
+@authorized_users_only
+async def change_ses(client, message):
+    range = message.command[1]
+    chat_id = message.chat.id
+    try:
+       callsmusic.pytgcalls.change_volume_call(chat_id, volume=int(range))
+       await message.reply(f"✅ **Birim olarak ayarlandı:** ```{range}%```")
+    except Exception as e:
+       await message.reply(f"**hata:** {e}")
+
+# Sohbet grubunuzda bilgi yazarak bilgi alınız. Diger botların komutu (help) sorun olmasın diye (bilgi) yapıldı. 
 @Client.on_message(
     filters.command("bilgi")
     & filters.group
