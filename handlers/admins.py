@@ -121,3 +121,13 @@ async def change_ses(client, message):
        await message.reply(f"✅ **Birim olarak ayarlandı:** ```{range}%```")
     except Exception as e:
        await message.reply(f"**hata:** {e}")
+
+
+# Sistemin Kendi Yönetici Ön Bellegi Yenilemesi İçin.. 
+@Client.on_message(
+    command("reload")
+)
+@errors
+async def reload(client, message: Message):
+    set(message.chat.id, [member.user for member in await message.chat.get_members(filter="administrators")])
+    await message.reply_text("✯ Talia-Efsane-Music ✯=❇️ Yönetici ön belleği yenilendi!")
