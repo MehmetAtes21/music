@@ -1,11 +1,11 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
-from config import BOT_USARNAME, BOT_NAME as bot
+from config import BOT_NAME as BN
 from helpers.filters import command, other_filters2
 
 
-@Client.on_message(command(["start", f"start@{BOT_USARNAME}"]))
+@Client.on_message(command(["start", f"start"]))
 async def start(_, message: Message):
     await message.reply_photo("https://i.ibb.co/khRz42f/Turkish-Voice.jpg")
     await message.reply_text(
