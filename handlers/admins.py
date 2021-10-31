@@ -124,9 +124,7 @@ async def change_ses(client, message):
 
 
 # Sistemin Kendi Yönetici Ön Bellegi Yenilemesi İçin.. 
-@Client.on_message(
-    command("reload")
-)
+@Client.on_message(command("reload") & other_filters 
 @errors
 async def reload(client, message: Message):
     set(message.chat.id, [member.user for member in await message.chat.get_members(filter="administrators")])
