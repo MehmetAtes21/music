@@ -18,7 +18,7 @@ from helpers.errors import DurationLimitError
 from helpers.gets import get_url, get_file_name
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-@Client.on_message(command("ytplay") & other_filters)
+@Client.on_message(command("["ytplay", "dinle"]") & other_filters)
 @errors
 async def ytplay(_, message: Message):
 
@@ -33,7 +33,7 @@ async def ytplay(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 **işleme alındı** Parça...")
+    await lel.edit("🎵 **İşleme alındı** 🤫...")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
