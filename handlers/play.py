@@ -100,7 +100,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "Mizuki"
+        user.first_name = "EfsaneMusicVaves"
     usar = user
     wew = usar.id
     try:
@@ -190,7 +190,7 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
+                            text="İzlemek için 🎬",
                             url=f"{url}"),
                         InlineKeyboardButton(
                             text="İndir 📥",
@@ -208,7 +208,7 @@ async def play(_, message: Message):
                     [
                         [
                             InlineKeyboardButton(
-                                text="YouTube 🎬",
+                                text="İzlemek için 🎬",
                                 url=f"https://youtube.com")
 
                         ]
@@ -258,7 +258,7 @@ async def play(_, message: Message):
                 [
                     [
                         InlineKeyboardButton(
-                            text="YouTube 🎬",
+                            text="İzlemek için 🎬",
                             url=f"{url}"),
                         InlineKeyboardButton(
                             text="İndir 📥",
