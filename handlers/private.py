@@ -17,29 +17,28 @@ Sesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi v
             [
                 [
                     InlineKeyboardButton(
-                        "🏷️ Destek Grubu", url="https://t.me/Sohbetdestek"
-                    ),
-                    InlineKeyboardButton(
-                        "🔧 Yardımcı", url = "https://t.me/Bir_Beyfendi"
+                        "➕ Grubunuza Ekle ➕", url="https://t.me/Efsanestar_bot?startgroup=true"
                     )
-                  ],[
+                ],
+                [
                     InlineKeyboardButton(
-                        "🛠 Kurucu" , url = "https://t.me/Mahoaga"
+                        "🔊 Asistan", url="https://t.me/Maxmusic_Asistan" 
                     ),
                     InlineKeyboardButton(
-                        "🔊 Asistan" , url = "https://t.me/TaliaMusicAsistant"
+                        "💬 Sohbet", url="https://t.me/Sohbetskyfall"
+                    ),
+                    InlineKeyboardButton(
+                        "🙎‍♂️ Geliştirici", url="https://t.me/Mahoaga") 
+                ],
+                [
+                    InlineKeyboardButton(
+                        "🧩 Kaynak Kodu", url="https://github.com/Mehmetbaba55"
                     )
-                ],[ 
-                    InlineKeyboardButton(
-                        "🌀 Komutlar" , url = "https://telegra.ph/Komutlar-10-22"
-                    ),
-                    InlineKeyboardButton(
-                        "🎮 Oyun Botu", url="https://t.me/BasitOyunBot"
-                    )]
+                ]
             ]
-        ),
+        ), 
      disable_web_page_preview=True
-    )
+   ) 
 
 @Client.on_message(filters.command(["reload", f"reload@{BOT_USARNAME}"]) & ~filters.private & ~filters.channel)
 async def reload(_, message: Message):
