@@ -11,7 +11,7 @@ from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
 
 
-@Client.on_message(command("pause") & other_filters)
+@Client.on_message(command(["pause", "durdur"]) & other_filters)
 @errors
 @authorized_users_only
 async def pause(_, message: Message):
@@ -26,7 +26,7 @@ async def pause(_, message: Message):
         await message.reply_text("▶️ **Müzik duraklatıldı!**\n\n• Müzik kullanımına devam etmek için **komut » resume**") 
 
 
-@Client.on_message(command("resume") & other_filters)
+@Client.on_message(command(["resume", "devam"]) & other_filters)
 @errors
 @authorized_users_only
 async def resume(_, message: Message):
@@ -41,7 +41,7 @@ async def resume(_, message: Message):
         await message.reply_text("⏸ **Müzik devam ediyor!**\n\n• Kullanımı duraklatmak için **komut » pause**")
 
 
-@Client.on_message(command("end") & other_filters)
+@Client.on_message(command(["end", "son"]) & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
@@ -57,7 +57,7 @@ async def stop(_, message: Message):
         await message.reply_text("✅ **Müzik durduruldu!**\n\n• **Userbot'un sesli sohbet bağlantısı kesildi**")
 
 
-@Client.on_message(command("skip") & other_filters)
+@Client.on_message(command(["skip", "atla"]) & other_filters)
 @errors
 @authorized_users_only
 async def skip(_, message: Message):
