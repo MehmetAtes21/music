@@ -17,7 +17,7 @@ import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 @app.on_message(pyrogram.filters.command(["ara"]))
-async def ytara(_, message: Message):
+async def ytsearch(_, message: Message):
     try:
         if len(message.command) < 2:
             await message.reply_text("Aramanın bağımsız değişkene ihtiyacı var!")
