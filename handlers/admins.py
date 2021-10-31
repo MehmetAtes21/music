@@ -4,6 +4,8 @@ from pyrogram import Client
 from pyrogram.types import Message
 from callsmusic import callsmusic
 from cache.admins import admins
+from pyrogram import filters
+from helpers admins import set
 
 from config import BOT_NAME as BN
 from helpers.filters import command, other_filters
@@ -124,7 +126,7 @@ async def change_ses(client, message):
 
 
 # Sistemin Kendi Yönetici Ön Bellegi Yenilemesi İçin.. 
-@Client.on_message(command("reload"))
+@Client.on_message(filters.command("reload"))
 async def update_admin(client, message: Message):
     chat_id = get_chat_id(message.chat)
     set(
