@@ -61,7 +61,7 @@ async def ytplay(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Watch On YouTube 🎬",
+                        text="İzlemek için 🎬",
                         url=f"{url}")
                    
                 ]
@@ -72,7 +72,7 @@ async def ytplay(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Watch On YouTube 🎬",
+                        text="İzlemek için 🎬",
                         url=f"{url}")
                    
                 ]
@@ -87,7 +87,7 @@ async def ytplay(_, message: Message):
     elif url:
         file_path = await converter.convert(youtube.download(url))
     else:
-        return await lel.edit_text("❗ Bana oynayacak bir şey vermedin!")
+        return await lel.edit_text("❗ Bana müzik çalmam için Şarkı ismi yazınız!")
 
     if message.chat.id in callsmusic.pytgcalls.active_calls:
         position = await queues.put(message.chat.id, file=file_path)
