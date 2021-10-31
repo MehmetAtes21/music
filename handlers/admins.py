@@ -1,12 +1,10 @@
 from asyncio.queues import QueueEmpty
-from helpers.channelmusic import get_chat_id
 
 from pyrogram import Client
 from pyrogram.types import Message
 from callsmusic import callsmusic
 from cache.admins import admins
 from pyrogram import filters
-from cache.admins import set
 
 from config import BOT_NAME as BN
 from helpers.filters import command, other_filters
@@ -124,17 +122,3 @@ async def change_ses(client, message):
        await message.reply(f"✅ **Birim olarak ayarlandı:** ```{range}%```")
     except Exception as e:
        await message.reply(f"**hata:** {e}")
-
-
-# Sistemin Kendi Yönetici Ön Bellegi Yenilemesi İçin.. 
-@Client.on_message(filters.command("reload"))
-async def update_admin(client, message: Message):
-    chat_id = get_chat_id(message.chat)
-    set(
-        chat_id,
-        [
-            member.user
-            for member in await message.chat.get_members(filter="administrators")
-        ],
-    )
-    await message.reply_text("👮‍♂️ Yönetici önbelleği yenilendi!")
