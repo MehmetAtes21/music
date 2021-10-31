@@ -124,11 +124,8 @@ async def change_ses(client, message):
 
 
 # Sohbet grubunuzda bilgi yazarak bilgi alınız. Diger botların komutu (help) sorun olmasın diye (bilgi) yapıldı. 
-@Client.on_message(
-    filters.command("bilgi")
-    & filters.group
-    & ~ filters.edited
-)
+
+@Client.on_message(command("bilgi") & filters.group & ~ filters.edited)
 async def helper(client , message:Message):
       await message.reply_text(f"**Merhaba {message.from_user.mention}!\n Bu botun bilgi menüsü 🤩\n\n ▶️ /play - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme\n ▶️ /play <song name> - istediğiniz şarkıyı çalın\n 🔴 /ytplay <Sorgu> - youtube üzerinden istediğiniz şarkıyı çalar.\n 🎵 /bul <song name> - istediğiniz şarkıları hızlı bir şekilde bulun\n 🎵 /vbul istediğiniz videoları hızlı bir şekilde bulun\n 🔍 /ara <query> - youtube'da ayrıntıları içeren videoları arama\n\n Yalnızca yöneticiler için..\n ▶️ /resume - şarkı çalmaya devam et\n ⏹ /end - müzik çalmayı durdurma\n 🔼 /ver botun sadece yönetici için kullanılabilir olan komutlarını kullanabilmesi için kullanıcıya yetki ver\n 🔽 /al botun yönetici komutlarını kullanabilen kullanıcının yetkisini al\n 🎚 /ses asistan hesabın ses seviyesini kontrol et\n\n ⚪ /katil - Müzik asistanı grubunuza katılır\n ⚫ /ayril - Müzik asistanı grubunuzu terk eder.**", 
       reply_markup=InlineKeyboardMarkup(
