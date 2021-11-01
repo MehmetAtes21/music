@@ -20,7 +20,7 @@
 - `/play <song name>` - istediğiniz şarkıyı çal
 - `/ytplay <Sorgu>` - youtube üzerinden çalma
 - `/bul <song name>` - istediğiniz şarkıları hızlı bir şekilde indirin 
-- `/arama <query>` - youtube'da ayrıntıları içeren videoları arama
+- `/ara <query>` - youtube'da ayrıntıları içeren videoları arama
 
 #### Yalnızca yöneticiler 
 - `/ver` - üyeler için extra yetki 
