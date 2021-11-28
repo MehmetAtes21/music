@@ -32,7 +32,7 @@ Sesli sohbetlerde müzik çalabilen botum. Ban yetkisiz, Ses yönetimi yetkisi v
                 ],
                 [
                     InlineKeyboardButton(
-                        "🧩 Kaynak Kodu", url="https://github.com/Mehmetbaba55"
+                        "🧩 Kaynak Kodu", url="https://t.me/Sohbetdestek" 
                     )
                 ]
             ]
