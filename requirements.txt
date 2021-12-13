@@ -1,5 +1,5 @@
 tgcrypto 
-py-tgcalls==0.8.1 
+py-tgcalls==0.5.5 
 python-dotenv
 youtube_dl
 youtube_search_python==1.5.1
