@@ -10,8 +10,8 @@ aiofiles
 asyncio
 youtube_search
 search_engine_parser
+yt-dlp==2021.11.10.1
 wget 
 ffmpeg-python 
 Pillow
-ujson
-yt_dlp 
+ujson 
