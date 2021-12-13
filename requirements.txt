@@ -5,7 +5,7 @@ python-dotenv
 youtube_dl
 youtube_search_python==1.5.1
 requests
-aiohttp==3.7.3
+aiohttp[speedups]
 aiofiles==0.8.0
 asyncio
 youtube-search
