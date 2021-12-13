@@ -1,9 +1,10 @@
-pyrogram==1.2.9 
-TgCrypto 
-py-tgcalls 
+tgcrypto
+git+https://github.com/pyrogram/pyrogram@master
+git+https://github.com/yt-dlp/yt-dlp@master
+youtube-search-python==1.4.9
+py-tgcalls
+httpx==0.13.3
 python-dotenv
-youtube_dl
-youtube_search_python
 requests
 aiohttp
 aiofiles
