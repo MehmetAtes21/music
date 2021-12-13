@@ -1,4 +1,4 @@
-git+https://github.com/pyrogram/pyrogram@master
+pyrogram 
 tgcrypto
 Py-tgcalls
 python-dotenv
