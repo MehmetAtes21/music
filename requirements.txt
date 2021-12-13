@@ -10,6 +10,7 @@ aiohttp
 aiofiles
 asyncio
 youtube_search
+youtube_dl
 youtube-search-python 
 search_engine_parser
 wget 
