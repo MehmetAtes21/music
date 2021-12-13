@@ -1,6 +1,6 @@
 git+https://github.com/pyrogram/pyrogram@master
 py-tgcalls==0.8.1 
-python-dotenv
+python-dotenv==0.19.2 
 youtube_dl
 youtube_search_python==1.5.1
 requests==2.26.0 
