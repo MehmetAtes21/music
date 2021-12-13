@@ -5,13 +5,13 @@ python-dotenv
 youtube_dl
 youtube_search_python==1.5.1
 requests
-aiohttp==3.7.4 
+aiohttp 
 aiofiles
 asyncio
 youtube_search
 search_engine_parser
 wget 
-ffmpeg
+ffmpeg-python 
 Pillow
 ujson
 yt_dlp 
