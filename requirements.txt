@@ -1,9 +1,9 @@
 pyrogram
-TgCrypto
+tgcrypto 
 py-tgcalls==0.8.1rc1 
 python-dotenv
 youtube_dl
-youtube_search_python==1.4.6 
+youtube_search_python==1.5.1
 requests
 aiohttp==3.7.4 
 aiofiles
