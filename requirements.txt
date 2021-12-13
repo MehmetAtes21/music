@@ -1,4 +1,3 @@
-pyrogram
 tgcrypto 
 py-tgcalls==0.8.1 
 python-dotenv
@@ -9,6 +8,8 @@ aiohttp
 aiofiles
 asyncio
 youtube_search
+python-arq 
+git+https://github.com/pyrogram/pyrogram@master 
 search_engine_parser
 yt-dlp==2021.11.10.1
 wget 
