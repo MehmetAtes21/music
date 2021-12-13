@@ -1,8 +1,8 @@
 pyrogram==1.2.11
-py-tgcalls==0.8.1 
+py-tgcalls==0.5.5 
 python-dotenv==0.19.2 
 youtube_dl
-youtube_search_python==1.5.1
+youtube-searc-python==1.5.1
 requests==2.26.0 
 aiohttp[speedups]
 aiofiles==0.8.0
