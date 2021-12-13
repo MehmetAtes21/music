@@ -1,5 +1,5 @@
 git+https://github.com/pyrogram/pyrogram@master
-TgCrypto
+tgcrypto
 pytgcalls==2.1.0
 python-dotenv
 youtube_dl
