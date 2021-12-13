@@ -1,10 +1,10 @@
-pyrogram==1.2.11
+pyrogram==1.2.8
 py-tgcalls==0.5.5 
 python-dotenv==0.19.2 
 youtube_dl
 youtube-searc-python==1.5.1
 requests==2.26.0 
-aiohttp[speedups]
+Aiohttp==3.7.4 
 aiofiles==0.8.0
 asyncio
 youtube-search
