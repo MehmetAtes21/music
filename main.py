@@ -4,7 +4,6 @@ from pyrogram import Client as Bot
 from config import API_HASH, API_ID, BOT_TOKEN
 from callsmusic import run
 
-response = requests.get(BG_IMAGE)
 file = open("./etc/foreground.png", "wb")
 file.write(response.content)
 file.close()
