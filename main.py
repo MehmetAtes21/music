@@ -1,7 +1,7 @@
 import requests
 from pyrogram import Client as Bot
 
-from config import API_HASH, API_ID, BG_IMAGE, BOT_TOKEN
+from config import API_HASH, API_ID, BOT_TOKEN
 from callsmusic import run
 
 response = requests.get(BG_IMAGE)
