@@ -22,6 +22,11 @@
       "description": "Müzik Oynatıcı Bot Kullanıcı İsmi @ olmadan yazınız.",
       "required": true,
       "value": ""
+    },    
+    "BG_IMAGE": {
+      "description": "BG image of bot (Use transparent one) [IGNORE].",
+      "required": false,
+      "value": " https://telegra.ph/file/dcfdf612e499eef0e0b1f.png"
     },
     "API_ID": {
       "description": "my.telegram'dan uygulama kimliği.org/apps",
