@@ -3,9 +3,10 @@
 ### Telegram grubunun sesli aramasında müzik çalabilen bir bot
 ### Aktif çalışıyor.... 😅
 
+
 <p align="center">
-  <img src="https://i.ibb.co/khRz42f/Turkish-Voice.jpg">
-</p>
+  <img src="https://telegra.ph/file/a4fa687ed647cfef52402.jpg">
+</p> 
 
 <h3>Gereksinimler 📝</h3>
 
