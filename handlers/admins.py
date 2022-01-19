@@ -9,72 +9,66 @@ from pyrogram import filters
 from config import BOT_NAME as BN
 from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
+from callsmusic import callsmusic, queues
+from pytgcalls.types.input_stream import InputAudioStream
+from pytgcalls.types.input_stream import InputStream
 
 
-@Client.on_message(command(["pause", "durdur"]) & other_filters)
+ACTV_CALLS = []
+
+@Client.on_message(command(["durdur"]) & other_filters)
 @errors
 @authorized_users_only
-async def pause(_, message: Message):
-    if (
-            message.chat.id not in callsmusic.pytgcalls.active_calls
-    ) or (
-            callsmusic.pytgcalls.active_calls[message.chat.id] == 'Duraklatıldı'
-    ):
-        await message.reply_text("❗ Hiçbir şey çalmıyor!")
-    else:
-        callsmusic.pytgcalls.pause_stream(message.chat.id)
-        await message.reply_text("▶️ **Müzik duraklatıldı!**\n\n• Müzik kullanımına devam etmek için **komut » resume**") 
+async def durdur(_, message: Message):
+    await callsmusic.pytgcalls.pause_stream(message.chat.id)
+    await message.reply_text("durduruldu..!")
 
 
-@Client.on_message(command(["resume", "devam"]) & other_filters)
+@Client.on_message(command(["devam"]) & other_filters)
 @errors
 @authorized_users_only
-async def resume(_, message: Message):
-    if (
-            message.chat.id not in callsmusic.pytgcalls.active_calls
-    ) or (
-            callsmusic.pytgcalls.active_calls[message.chat.id] == 'Oynanıyor'
-    ):
-        await message.reply_text("❗ Hiçbir şey duraklatılmadı!")
-    else:
-        callsmusic.pytgcalls.resume_stream(message.chat.id)
-        await message.reply_text("⏸ **Müzik devam ediyor!**\n\n• Kullanımı duraklatmak için **komut » pause**")
+async def devam(_, message: Message):
+    await callsmusic.pytgcalls.resume_stream(message.chat.id)
+    await message.reply_text("çalma işlemi devam ediyor....!")
 
 
-@Client.on_message(command(["end", "son"]) & other_filters)
+@Client.on_message(command(["son"]) & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
-    if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ Hiçbir şey yayınlanmıyor!")
-    else:
-        try:
-            callsmusic.queues.clear(message.chat.id)
-        except QueueEmpty:
-            pass
+    try:
+        callsmusic.queues.clear(message.chat.id)
+    except QueueEmpty:
+        pass
 
-        callsmusic.pytgcalls.leave_group_call(message.chat.id)
-        await message.reply_text("✅ **Müzik durduruldu!**\n\n• **Userbot'un sesli sohbet bağlantısı kesildi**")
+    await callsmusic.pytgcalls.leave_group_call(message.chat.id)
+    await message.reply_text("çalma işlemi sona erdi..!")
 
-
-@Client.on_message(command(["skip", "atla"]) & other_filters)
+@Client.on_message(command(["atla"]) & other_filters)
 @errors
 @authorized_users_only
-async def skip(_, message: Message):
-    if message.chat.id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ Atlatılacak müzik yok!")
+async def atla(_, message: Message):
+    global que
+    chat_id = message.chat.id
+    for x in callsmusic.pytgcalls.active_calls:
+        ACTV_CALLS.append(int(x.chat_id))
+    if int(chat_id) not in ACTV_CALLS:
+        await message.reply_text("atlatıldı mı ki uzaydan..📡")
     else:
-        callsmusic.queues.task_done(message.chat.id)
-
-        if callsmusic.queues.is_empty(message.chat.id):
-            callsmusic.pytgcalls.leave_group_call(message.chat.id)
+        queues.task_done(chat_id)
+        
+        if queues.is_empty(chat_id):
+            await callsmusic.pytgcalls.leave_group_call(chat_id)
         else:
-            callsmusic.pytgcalls.change_stream(
-                message.chat.id,
-                callsmusic.queues.get(message.chat.id)["file"]
+            await callsmusic.pytgcalls.change_stream(
+                chat_id, 
+                InputStream(
+                    InputAudioStream(
+                        callsmusic.queues.get(chat_id)["file"],
+                    ),
+                ),
             )
-
-        await message.reply_text("⏭️ **__Şarkı bir sonraki kuyruğa atlatıldı__**")
+    await message.reply_text("yürütülüyor...🚩")
 
 
 # Yetki Vermek için (ver) Yetki almak için (al) komutlarını ekledim.
