@@ -1,5 +1,5 @@
 pyrogram
-py-tgcalls 
+py-tgcalls==0.8.1rc1 
 TgCrypto
 git+https://github.com/ophexor/yt-dl@master
 python-dotenv
