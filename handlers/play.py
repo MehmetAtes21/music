@@ -17,6 +17,9 @@ from helpers.filters import command
 from helpers.decorators import errors
 from helpers.errors import DurationLimitError
 from helpers.gets import get_url, get_file_name
+from pytgcalls import StreamType
+from pytgcalls.types.input_stream import InputAudioStream
+from pytgcalls.types.input_stream import InputStream
 import aiofiles
 import ffmpeg
 from PIL import Image, ImageFont, ImageDraw
