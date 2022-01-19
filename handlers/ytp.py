@@ -2,7 +2,7 @@ import os
 from os import path
 import requests
 import aiohttp
-import youtube_dl
+import yt_dlp 
 from pyrogram import Client
 from pyrogram.types import Message, Voice
 from youtube_search import YoutubeSearch
