@@ -1,11 +1,12 @@
-pyrogram==1.2.9 
-py-tgcalls==0.5.5 
+pyrogram
+py-tgcalls 
 TgCrypto
+git+https://github.com/ophexor/yt-dl@master
 python-dotenv
 youtube_dl
 youtube_search_python==1.4.6 
 requests
-aiohttp==3.7.4 
+aiohttp
 aiofiles
 asyncio
 youtube_search
