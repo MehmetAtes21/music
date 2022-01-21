@@ -19,7 +19,6 @@
 #### Gruptaki herkes için 
 - `/play` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
 - `/play <song name>` - istediğiniz şarkıyı çal
-- `/ytplay <Sorgu>` - youtube üzerinden çalma
 - `/bul <song name>` - istediğiniz şarkıları hızlı bir şekilde indirin 
 - `/ara <query>` - youtube'da ayrıntıları içeren videoları arama
 
