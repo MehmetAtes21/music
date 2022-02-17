@@ -1,10 +1,10 @@
 pyrogram
-py-tgcalls==0.8.1rc1 
+py-tgcalls==0.8.1 
 TgCrypto
 git+https://github.com/ophexor/yt-dl@master
 python-dotenv
 youtube_dl
-youtube_search_python==1.4.6 
+youtube_search_python 
 requests
 aiohttp
 aiofiles
@@ -14,6 +14,6 @@ python-arq
 search_engine_parser
 wget 
 ffmpeg-python
-Pillow==8.3.1
+Pillow
 ujson
 yt_dlp
