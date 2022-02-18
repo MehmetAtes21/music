@@ -8,12 +8,9 @@
   <img src="https://telegra.ph/file/a4fa687ed647cfef52402.jpg">
 </p> 
 
-<h3>Gereksinimler 📝</h3>
+<h3>Sürümüler 📮</h3>
 
-- FFmpeg
-- NodeJS [nodesource.com](https://nodesource.com/)
-- Python 3.7+
-- [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
+- pyrogram version 0.8.6
 
 ### Komutlar 🛠
 #### Gruptaki herkes için 
