@@ -1,6 +1,7 @@
 import os
 from os import path
 from pyrogram import Client, filters
+from pyrogram.types import CallbackQuery
 from pyrogram.types import Message, Voice, InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserAlreadyParticipant
 from callsmusic import callsmusic, queues
