@@ -42,10 +42,14 @@ async def devam(_, message: Message):
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
-await message.reply_text("❌ **Şu anda müzik çalmıyor**")
-else:
-    try:
-        callsmusic.queues.clear(message.chat.id)
+    chat_id = get_chat_id(message.chat)
+    for x in callsmusic.pytgcalls.active_calls:
+        ACTV_CALLS.append(int(x.chat_id))
+    if int(chat_id) not in ACTV_CALLS:
+        await message.reply_text("❌ **no music is currently playing**")
+    else:
+        try:
+            callsmusic.queues.clear(message.chat.id)
     except QueueEmpty:
         pass
 
