@@ -12,8 +12,7 @@
 
 - pyrogram version 0.8.6
 
-### Komutlar 🛠
-#### Gruptaki herkes için 
+### Komutlar Genel ⚛️
 - `/play` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
 - `/play <song name>` - istediğiniz şarkıyı çal
 - `/bul <song name>` - istediğiniz şarkıları hızlı bir şekilde indirin 
