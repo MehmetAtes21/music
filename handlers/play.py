@@ -261,18 +261,15 @@ async def play(_, message: Message):
             return
 
         keyboard = InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="İzlemek için 🎬",
-                            url=f"{url}"),
-                        InlineKeyboardButton(
-                            text="İndir 📥",
-                            url=f"{durl}")
-
-                    ]
-                ]
-            )
+        [
+            [
+                InlineKeyboardButton("🌀 Bilgi, url=f"https://t.me/efsanestar_bot"),
+                InlineKeyboardButton("📮 Kanal", url=f"https://t.me/Sohbetdestek"),
+            ],[
+                InlineKeyboardButton("🗑 Çıkış", callback_data="cls"),
+            ],
+        ]
+    )
         
         if (dur / 60) > DURATION_LIMIT:
              await lel.edit(f"❌ Daha uzun videolar {DURATION_LIMIT} dakikaların oynatılamasına izin verilmez!")
