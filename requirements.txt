@@ -1,7 +1,7 @@
 pyrogram
-py-tgcalls==0.8.1 
+py-tgcalls==0.8.2 
 TgCrypto
-
+git+https://github.com/Sorrybabe/downloader
 python-dotenv
 youtube_dl
 youtube_search_python 
@@ -16,4 +16,3 @@ wget
 ffmpeg-python
 Pillow
 ujson
-yt_dlp
