@@ -21,7 +21,10 @@ ACTV_CALLS = []
 @authorized_users_only
 async def durdur(_, message: Message):
     await callsmusic.pytgcalls.pause_stream(message.chat.id)
-    await message.reply_text("durduruldu..!")
+    a = await message.reply_text("▶️ **Müzik duraklatıldı!**\n\n• Müzik kullanımına devam etmek için **komut » devam**")
+    await sleep(3)
+    await a.delete()
+    
 
 
 @Client.on_message(command(["devam"]) & other_filters)
@@ -29,7 +32,10 @@ async def durdur(_, message: Message):
 @authorized_users_only
 async def devam(_, message: Message):
     await callsmusic.pytgcalls.resume_stream(message.chat.id)
-    await message.reply_text("çalma işlemi devam ediyor....!")
+    a = await message.reply_text("⏸ **Müzik devam ediyor!**\n\n• Müzik kullanımı duraklatmak için **komut » durdur**")
+    await sleep(3)
+    await a.delete()
+    
 
 
 @Client.on_message(command(["son"]) & other_filters)
@@ -42,7 +48,9 @@ async def stop(_, message: Message):
         pass
 
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("❎ **Müzik durduruldu!**\n\n• **Userbot'un sesli sohbet bağlantısı kesildi**")
+    a = await message.reply_text("✅ **Müzik durduruldu!**\n\n• **Userbot'un sesli sohbet bağlantısı kesildi**")
+    await sleep(3)
+    await a.delete()
 
 
 @Client.on_message(command(["atla"]) & other_filters)
@@ -54,7 +62,9 @@ async def atla(_, message: Message):
     for x in callsmusic.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("Sorunlar algılandı.📡")
+        a = await message.reply_text("Atlatılacak bişey yok!")
+        await sleep(3)
+        await a.delete()
     else:
         queues.task_done(chat_id)
         
@@ -69,8 +79,10 @@ async def atla(_, message: Message):
                     ),
                 ),
             )
-    await message.reply_text("➡️ Sıradaki parçaya geçildi.")
-
+            
+        a = await message.reply_text("➡️ **Geçerli ✨ Şarkı 💫 Atlatıldı.**")
+        await sleep(3)
+        await a.delete()
 
 # Yetki Vermek için (ver) Yetki almak için (al) komutlarını ekledim.
 # Gayet güzel çalışıyor. @Mahoaga Tarafından Eklenmiştir. 
