@@ -52,13 +52,12 @@ async def stop(_, message: Message):
             queues.clear(message.chat_id)
         except QueueEmpty:
         pass
-
-    await callsmusic.pytgcalls.leave_group_call(message.chat.id)
-    a = await message.reply_text("❎ **Müzik durduruldu!**\n\n• **Userbot'un sesli sohbet bağlantısı kesildi**")
-    await sleep(3)
-    await a.delete()
-
-
+        await callsmusic.pytgcalls.leave_group_call(message.chat_id)
+        await _.send_message(
+            message.chat.id,
+            "✅ __The userbot has disconnected from voice chat.__"
+        )
+    
 @Client.on_message(command(["atla"]) & other_filters)
 @errors
 @authorized_users_only
