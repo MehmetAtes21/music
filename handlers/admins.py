@@ -68,7 +68,7 @@ async def atla(_, message: Message):
                     ),
                 ),
             )
-    await message.reply_text("Şarkı sıradaki parçaya geçildi...🚩")
+    await message.reply_text("🚧 Sıradaki parçaya geçildi...")
 
 
 # Yetki Vermek için (ver) Yetki almak için (al) komutlarını ekledim.
