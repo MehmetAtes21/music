@@ -1,5 +1,5 @@
 from asyncio.queues import QueueEmpty
-
+from cache.admins import admins
 from pyrogram import Client
 from pyrogram.types import Message
 from callsmusic import callsmusic
@@ -53,7 +53,7 @@ async def atla(_, message: Message):
     for x in callsmusic.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("atlatıldı mı ki uzaydan..📡")
+        await message.reply_text("Sorunlar algılandı.📡")
     else:
         queues.task_done(chat_id)
         
@@ -68,7 +68,7 @@ async def atla(_, message: Message):
                     ),
                 ),
             )
-    await message.reply_text("yürütülüyor...🚩")
+    await message.reply_text("Şarkı sıradaki parçaya geçildi...🚩")
 
 
 # Yetki Vermek için (ver) Yetki almak için (al) komutlarını ekledim.
@@ -116,3 +116,18 @@ async def change_ses(client, message):
        await message.reply(f"✅ **Birim olarak ayarlandı:** ```{range}%```")
     except Exception as e:
        await message.reply(f"**hata:** {e}")
+
+@Client.on_message(command("reload") & other_filters)
+@errors
+@authorized_users_only
+async def update_admin(client, message):
+    global admins
+    new_admins = []
+    new_ads = await client.get_chat_members(message.chat.id, filter="administrators")
+    for u in new_ads:
+        new_admins.append(u.user.id)
+    admins[message.chat.id] = new_admins
+    await client.send_message(
+        message.chat.id,
+        "✅ **Bot yeniden başladı!**\n✅ **Admin listesi güncellendi!**"
+    )
