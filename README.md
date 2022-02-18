@@ -1,6 +1,6 @@
 <h2 align="centre">Telegram Sohbet Mp3 Oynatıcı 🎵</h2>
 
-### Telegram grublarının sesli Sohbetlerinde müzik çalabilen bir bot
+### Telegram grublarının sesli Sohbetlerinde müzik çalar. 
 ### Güncellendi aktif.... 😇
 
 
