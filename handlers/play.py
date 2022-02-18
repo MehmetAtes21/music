@@ -196,18 +196,15 @@ async def play(_, message: Message):
                 secmul *= 60
                 
             keyboard = InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="İzlemek için 🎬",
-                            url=f"{url}"),
-                        InlineKeyboardButton(
-                            text="İndir 📥",
-                            url=f"{durl}")
-
-                    ]
-                ]
-            )
+        [
+            [
+                InlineKeyboardButton("🌀 Bilgi, url=f"https://t.me/Efsanestar_bot"),
+                InlineKeyboardButton("📮 Kanal", url=f"https://t.me/Sohbetdestek"),
+            ],[
+                InlineKeyboardButton("🗑 Çıkış", callback_data="cls"),
+            ],
+        ]
+    )
         except Exception as e:
             title = "NaN"
             thumb_name = "https://i.ibb.co/Qkz78hx/images-1.jpg"
