@@ -33,7 +33,7 @@
 
 <h4>🔺 Herokuya Dağıt 🔻</h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmetbaba55/EfsaneMusicVaves)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmetbaba55/EfsaneMusic)
 
 <h4> Railway ile Kurulum Yap </h4>
 
