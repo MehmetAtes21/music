@@ -7,9 +7,9 @@
 
 <h3>Sürümüler 📮</h3>
 
-- pyrogram version 0.8.6
+- pyrogram version 0.8.5
 
-### Komutlar Genel ⚛️
+### Komutlar Genel 🍭
 - `/play` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
 - `/play <song name>` - istediğiniz şarkıyı çal
 - `/bul <song name>` - istediğiniz şarkıları hızlı bir şekilde indirin 
