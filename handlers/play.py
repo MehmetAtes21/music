@@ -198,7 +198,7 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🗄️ Bilgi", url=f"https://t.me/efsanestar_bot"),
+                InlineKeyboardButton("📚 Bilgi", url=f"https://t.me/efsanestar_bot"),
                 InlineKeyboardButton("📮 Kanal", url=f"https://t.me/Sohbetdestek"),
             ],[
                 InlineKeyboardButton("✨ Kapat", callback_data="cls"),
@@ -232,7 +232,7 @@ async def play(_, message: Message):
         await lel.edit("🔎 **Lütfen bekleyiniz...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🔄 **Sesler İşleniyor..🔥**")
+        await lel.edit("🔄 **Ses İşleniyor..🔥**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -263,7 +263,7 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🗄️ Bilgi", url=f"https://t.me/efsanestar_bot"),
+                InlineKeyboardButton("📚 Bilgi", url=f"https://t.me/efsanestar_bot"),
                 InlineKeyboardButton("📮 Kanal", url=f"https://t.me/Sohbetdestek"),
             ],[
                 InlineKeyboardButton("✨ Kapat", callback_data="cls"),
