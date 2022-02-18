@@ -64,10 +64,10 @@ def song(client, message):
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
         rep = f"""
-**🏷 Şarkı Adı:** [{title}]({link})
+**☑️ Parça ismi:** [{title}]({link})
 **⏱️ Şarkı Süresi:** {duration}
 **👁 Tarafından görüldü:** {results[0]['views']}
-**🤖 Karşıya Yükleyen:** [MusicBot](https://t.me/Mp3dinleme_Bot)
+**✨ Karşıya Yükleyen:** [MusicBot](https://t.me/Efsanestar_bot)
 **👤 İstekler:** {rpk}
 """
         secmul, dur, dur_arr = 1, 0, duration.split(":")
@@ -84,7 +84,7 @@ def song(client, message):
         )
         m.delete()
     except Exception as e:
-        m.edit(""❌ hatanın, düzelmesini bekleyiniz.")
+        m.edit("❌ hatanın, düzelmesini bekleyiniz.")
         print(e)
     try:
         os.remove(audio_file)
