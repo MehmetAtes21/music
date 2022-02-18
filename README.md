@@ -1,6 +1,6 @@
 <h2 align="centre">Telegram Grup Müzik Çalar Botu 🎵</h2>
 
-### Telegram grubunun sesli Sohbetlerinde müzik çalabilen bir bot
+### Telegram grublarının sesli Sohbetlerinde müzik çalabilen bir bot
 ### Güncellendi aktif.... 😇
 
 
