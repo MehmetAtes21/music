@@ -161,7 +161,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="🗑️ Çıkış",
+                        text="✖️ Çıkış",
                         callback_data="cls")
                    
                 ]
@@ -201,7 +201,7 @@ async def play(_, message: Message):
                 InlineKeyboardButton("🌀 Bilgi", url=f"https://t.me/efsanestar_bot"),
                 InlineKeyboardButton("📮 Kanal", url=f"https://t.me/Sohbetdestek"),
             ],[
-                InlineKeyboardButton("🗑 Çıkış", callback_data="cls"),
+                InlineKeyboardButton("✖️ Çıkış", callback_data="cls"),
             ],
         ]
     )
@@ -228,7 +228,7 @@ async def play(_, message: Message):
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
-            return await lel.edit("🧐 **Söylemek istediğin şarkı nedir?**")
+            return await lel.edit("🤔 **Dinlemek istediğin şarkı nedir?**")
         await lel.edit("🔎 **Lütfen bekleyiniz...**")
         query = message.text.split(None, 1)[1]
         # print(query)
@@ -286,7 +286,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png",
-        caption="**🎵 şᴀʀᴋɪ:** {}\n**🕒 ꜱüʀᴇ:** {} min\n**👤 ᴇᴋʟᴇʏᴇɴ:** {}\n\n**#⃣ Kuyruğa Atılmış Konum:** {}".format(
+        caption="**🎵 şᴀʀᴋɪ:** {}\n**🕒 ꜱüʀᴇ:** {} min\n**👉 ᴇᴋʟᴇʏᴇɴ:** {}\n\n**#⃣ 🚧 Kuyruğa Atılmış Konum:** {}".format(
         title, duration, message.from_user.mention(), position
         ),
         reply_markup=keyboard)
@@ -306,7 +306,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="**🎵 şᴀʀᴋɪ:** {}\n**🕒 ꜱüʀᴇ:** {} min\n**👤 ᴇᴋʟᴇʏᴇɴ:** {}\n\n**▶️ Şimdi şu anda `{}`...**".format(
+        caption="**🎵 şᴀʀᴋɪ:** {}\n**🕒 ꜱüʀᴇ:** {} min\n**👉 ᴇᴋʟᴇʏᴇɴ:** {}\n\n**☑️ Şimdi şu anda `{}`...**".format(
         title, duration, message.from_user.mention(), message.chat.title
         ), )
         os.remove("final.png")
