@@ -38,7 +38,7 @@ async def devam(_, message: Message):
     
 
 
-@Client.on_message(command(["son", "stop"]) & other_filters)
+@Client.on_message(command(["son", "end"]) & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
@@ -55,7 +55,7 @@ async def stop(_, message: Message):
         await callsmusic.pytgcalls.leave_group_call(chat_id)
         await _.send_message(
             message.chat.id,
-            "✅ __Userbot sesli sohbet bağlantısını kesti.__"
+            "✅ **Müzik durduruldu!**\n\n• **Userbot sesli sohbet bağlantısı kesildi.**"
         )
     
 @Client.on_message(command(["atla"]) & other_filters)
