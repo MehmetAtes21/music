@@ -38,11 +38,11 @@ async def devam(_, message: Message):
     
 
 
-@Client.on_message(command(["end", "stop"]) & other_filters)
+@Client.on_message(command(["son", "stop"]) & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
-    chat_id = get_chat_id(message.chat)
+    chat_id = message.chat.id 
     for x in callsmusic.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
