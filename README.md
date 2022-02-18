@@ -5,7 +5,7 @@
   <img src="https://telegra.ph/file/a4fa687ed647cfef52402.jpg">
 </p> 
 
-<h3>Sürümüler 📮</h3>
+<h3>Sürümler 📮</h3>
 
 - pyrogram version 0.8.5
 
