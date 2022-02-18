@@ -6,9 +6,8 @@ import yt_dlp
 from pyrogram import Client, filters
 from youtube_search import YoutubeSearch
 
-from oda import app
-from oda.config import BOT_USERNAME
-from oda.utils.filters import command
+from config import BOT_USERNAME
+from helpers.filters import command
 
 
 def time_to_seconds(time):
