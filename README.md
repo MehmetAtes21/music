@@ -11,8 +11,8 @@
 
 <h3>Yeni Eklenen 💡</h3>
 
-- Admin Komutlarını Otomatik silme. 
-
+- Bazı omutların açıklamasını otomatik silme. 
+- atla - durdur - devam - son
 ### Komutlar Genel 🍭
 - `/play` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
 - `/play <song name>` - istediğiniz şarkıyı çal
