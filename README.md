@@ -36,7 +36,10 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmetbaba55/EfsaneMusicVaves)
 
 <h4> Railway ile Kurulum Yap </h4>
-- https://railway.app/ 
+
+- Site url
+
+➡️ https://railway.app/  
 
 #### [SESSION ALMAK İÇİN TIKLA](https://t.me/Sitringsison_bot)
 ---------------------- 
