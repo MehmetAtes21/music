@@ -9,6 +9,10 @@
 
 - pyrogram version 0.8.5
 
+<h3>Yeni Eklenen 💡</h3>
+
+- Admin Komutlarını Otomatik silme. 
+
 ### Komutlar Genel 🍭
 - `/play` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
 - `/play <song name>` - istediğiniz şarkıyı çal
