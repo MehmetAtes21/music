@@ -49,7 +49,7 @@ async def stop(_, message: Message):
         pass
 
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
-    a = await message.reply_text("✅ **Müzik durduruldu!**\n\n• **Userbot'un sesli sohbet bağlantısı kesildi**")
+    a = await message.reply_text("❎ **Müzik durduruldu!**\n\n• **Userbot'un sesli sohbet bağlantısı kesildi**")
     await sleep(3)
     await a.delete()
 
@@ -108,7 +108,7 @@ async def authenticate(client, message):
 async def deautenticate(client, message):
     global admins
     if not message.reply_to_message:
-        await message.reply("✘ Kullanıcıyı yetkisizleştirmek için mesaj atınız!")
+        await message.reply("✅ Kullanıcıyı yetkisizleştirmek için mesaj atınız!")
         return
     if message.reply_to_message.from_user.id in admins[message.chat.id]:
         new_admins = admins[message.chat.id]
@@ -116,7 +116,7 @@ async def deautenticate(client, message):
         admins[message.chat.id] = new_admins
         await message.reply("kullanıcı yetkisiz")
     else:
-        await message.reply("✔ Kullanıcının yetkisi alındı!")
+        await message.reply("✅ Kullanıcının yetkisi alındı!")
 
 
 # Sesli sohbet için 0-200 arası yeni komut eklenmiş oldu. 
