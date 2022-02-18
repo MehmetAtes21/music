@@ -15,9 +15,9 @@
 - atla - durdur - devam - son
 ### Komutlar Genel 🍭
 - `/play` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
-- `/play <song name>` - istediğiniz şarkıyı çal
-- `/bul <song name>` - istediğiniz şarkıları hızlı bir şekilde indirin 
-- `/ara <query>` - youtube'da ayrıntıları içeren videoları arama
+- `/play` - istediğiniz şarkıyı çal
+- `/bul` - istediğiniz şarkıları hızlı bir şekilde indirin 
+- `/ara` - youtube'da ayrıntıları içeren videoları arama
 
 #### Yalnızca yöneticiler 
 - `/ver` - üyeler için extra yetki 
