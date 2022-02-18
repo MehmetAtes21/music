@@ -1,8 +1,11 @@
+# Telegramda yani ben boş işler müdürü :) <> @Mahoaga Tarafından düzenlenen bir ufak proje. 
+
 import os
 import requests
 import aiohttp
 import yt_dlp
 import wget
+
 from pyrogram import Client, filters
 from youtube_search import YoutubeSearch
 from yt_dlp import YoutubeDL
