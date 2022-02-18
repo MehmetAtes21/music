@@ -86,7 +86,12 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     os.remove("background.png")
 
 
+# ==================================EfsaneVaves======================================================== 
+@Client.on_callback_query(filters.regex("cls"))
+async def cls(_, query: CallbackQuery):
+    await query.message.delete()
 
+# EfsaneMusicVaves düzenlenmiştir.
 
 @Client.on_message(command(["play", "oynat"]) 
                    & filters.group
