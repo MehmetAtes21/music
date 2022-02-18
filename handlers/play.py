@@ -127,7 +127,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**Müzik asistanı bu gruba müzik çalmak için katıldı 🎵**")
+                        message.chat.id, "**Merhaba Asistan bu gruba müzik çalmak için katıldı**")
 
                 except UserAlreadyParticipant:
                     pass
@@ -161,7 +161,7 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="✖️ Çıkış",
+                        text="✨ Kapat",
                         callback_data="cls")
                    
                 ]
@@ -198,10 +198,10 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("💡 Bilgi", url=f"https://t.me/efsanestar_bot"),
+                InlineKeyboardButton("🗄️ Bilgi", url=f"https://t.me/efsanestar_bot"),
                 InlineKeyboardButton("📮 Kanal", url=f"https://t.me/Sohbetdestek"),
             ],[
-                InlineKeyboardButton("✖️ Çıkış", callback_data="cls"),
+                InlineKeyboardButton("✨ Kapat", callback_data="cls"),
             ],
         ]
     )
@@ -232,7 +232,7 @@ async def play(_, message: Message):
         await lel.edit("🔎 **Lütfen bekleyiniz...**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("🔁 **Sesler İşleniyor..🔥**")
+        await lel.edit("🔄 **Sesler İşleniyor..🔥**")
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -263,10 +263,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("💡 Bilgi", url=f"https://t.me/efsanestar_bot"),
+                InlineKeyboardButton("🗄️ Bilgi", url=f"https://t.me/efsanestar_bot"),
                 InlineKeyboardButton("📮 Kanal", url=f"https://t.me/Sohbetdestek"),
             ],[
-                InlineKeyboardButton("✖️ Çıkış", callback_data="cls"),
+                InlineKeyboardButton("✨ Kapat", callback_data="cls"),
             ],
         ]
     )
