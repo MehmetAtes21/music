@@ -1,8 +1,8 @@
 {
-  "name": "Efsane Müzik",
+  "name": "Efsane Music",
   "description": "Telegram'ınızın Grup Sesli Sohbeti'nde şarkı çalmak için Açık Kaynaklı bot. Powered by Mehmetbaba55.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/Mehmetbaba55/EfsaneMusicVaves",
+  "repository": "https://github.com/Mehmetbaba55/EfsaneMusic",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
