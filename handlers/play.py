@@ -133,7 +133,7 @@ async def play(_, message: Message):
                     pass
                 except Exception:
                     await lel.edit(
-                        f"<b>🛑 Taşan Bekleme Hatası 🛑</b> \n\Merhaba {user.first_name}, yardımcı userbot, yoğun katılma istekleri nedeniyle grubunuza katılamadı. Userbot'un grupta yasaklı olmadığından emin olun ve daha sonra yeniden deneyin!")
+                        f"<b>🔵 Taşan Bekleme Hatası 🔵</b> \n\Merhaba {user.first_name}, yardımcı userbot, yoğun katılma istekleri nedeniyle grubunuza katılamadı. Userbot'un grupta yasaklı olmadığından emin olun ve daha sonra yeniden deneyin!")
     try:
         await USER.get_chat(chid)
     except:
@@ -198,7 +198,7 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🌀 Bilgi", url=f"https://t.me/efsanestar_bot"),
+                InlineKeyboardButton("💡 Bilgi", url=f"https://t.me/efsanestar_bot"),
                 InlineKeyboardButton("📮 Kanal", url=f"https://t.me/Sohbetdestek"),
             ],[
                 InlineKeyboardButton("✖️ Çıkış", callback_data="cls"),
@@ -263,10 +263,10 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("🌀 Bilgi", url=f"https://t.me/efsanestar_bot"),
+                InlineKeyboardButton("💡 Bilgi", url=f"https://t.me/efsanestar_bot"),
                 InlineKeyboardButton("📮 Kanal", url=f"https://t.me/Sohbetdestek"),
             ],[
-                InlineKeyboardButton("🗑 Çıkış", callback_data="cls"),
+                InlineKeyboardButton("✖️ Çıkış", callback_data="cls"),
             ],
         ]
     )
@@ -286,7 +286,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png",
-        caption="**🎵 şᴀʀᴋɪ:** {}\n**🕒 ꜱüʀᴇ:** {} min\n**👉 ᴇᴋʟᴇʏᴇɴ:** {}\n\n**#⃣ 🚧 Kuyruğa Atılmış Konum:** {}".format(
+        caption="**🎵 şᴀʀᴋɪ:** {}\n**🕒 ꜱüʀᴇ:** {} min\n**👉 ᴇᴋʟᴇʏᴇɴ:** {}\n\n**🚧 Kuyruğa Atılmış Konum:** {}".format(
         title, duration, message.from_user.mention(), position
         ),
         reply_markup=keyboard)
