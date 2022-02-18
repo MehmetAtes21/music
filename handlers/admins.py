@@ -38,7 +38,7 @@ async def devam(_, message: Message):
     
 
 
-@Client.on_message(command(["son"]) & other_filters)
+@Client.on_message(command(["son", "end"]) & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
