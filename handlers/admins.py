@@ -42,6 +42,8 @@ async def devam(_, message: Message):
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
+     await message.reply_text("❌ **Şu anda müzik çalmıyor**")
+else:
     try:
         callsmusic.queues.clear(message.chat.id)
     except QueueEmpty:
