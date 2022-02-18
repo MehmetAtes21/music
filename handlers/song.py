@@ -34,36 +34,46 @@ ydl_opts = {
 
 
 @Client.on_message(command(["bul", f"bul@{bn}"]) & ~filters.edited)
-def bul(_, message):
-    query = " ".join(message.command[1:])
+def song(client, message):
+    user_id = message.from_user.id
+    user_name = message.from_user.first_name
+    rpk = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
+    query = "".join(" " + str(i) for i in message.command[1:])
+    print(query)
     m = message.reply("🔎 Aranıyor..")
-    ydl_ops = {"format": "bestaudio[ext=m4a]"}
+    ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
         link = f"https://youtube.com{results[0]['url_suffix']}"
         title = results[0]["title"][:40]
         thumbnail = results[0]["thumbnails"][0]
-        thumb_name = f"{title}.jpg"
+        thumb_name = f"{title}.jpg" 
         thumb = requests.get(thumbnail, allow_redirects=True)
         open(thumb_name, "wb").write(thumb.content)
         duration = results[0]["duration"]
-
+        results[0]["url_suffix"]
+        results[0]["views"]
     except Exception as e:
-        m.edit("❌ şarkı bulunamadı.\n\nlütfen geçerli bir şarkı adı verin.")
+        m.edit("❎ **Şarkı bulunamadı.\n\nlütfen geçerli bir şarkı adı verin.**")
         print(str(e))
         return
     m.edit("⏱️ Sorgulanıyor...")
     try:
-        with yt_dlp.YoutubeDL(ydl_ops) as ydl:
+        with yt_dlp.YoutubeDL(ydl_ops) as ydl: 
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"**🎵 İndirildi.**"
+        rep = f"""
+**🏷 Şarkı Adı:** [{title}]({link})
+**⏱️ Şarkı Süresi:** {duration}
+**👁 Tarafından görüldü:** {results[0]['views']}
+**🤖 Karşıya Yükleyen:** [MusicBot](https://t.me/Mp3dinleme_Bot)
+**👤 İstekler:** {rpk}
+"""
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
-            dur += int(float(dur_arr[i])) * secmul
+            dur += int(float(dur_arr[i])) * secmul 
             secmul *= 60
-        m.edit("📥 Yüklüyorum...")
         message.reply_audio(
             audio_file,
             caption=rep,
@@ -74,9 +84,8 @@ def bul(_, message):
         )
         m.delete()
     except Exception as e:
-        m.edit("❌ hatanın, düzelmesini bekleyiniz.")
+        m.edit(""❌ hatanın, düzelmesini bekleyiniz.")
         print(e)
-
     try:
         os.remove(audio_file)
         os.remove(thumb_name)
