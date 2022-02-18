@@ -38,7 +38,7 @@ async def devam(_, message: Message):
     
 
 
-@Client.on_message(command(["son", "end"]) & other_filters)
+@Client.on_message(command(["end", "stop"]) & other_filters)
 @errors
 @authorized_users_only
 async def stop(_, message: Message):
@@ -46,13 +46,13 @@ async def stop(_, message: Message):
     for x in callsmusic.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("❌ **Şu anda müzik çalmıyor**")
+        await message.reply_text("❌ **no music is currently playing**")
     else:
         try:
-            queues.clear(message.chat_id)
+            queues.clear(chat_id)
         except QueueEmpty:
-        pass
-        await callsmusic.pytgcalls.leave_group_call(message.chat_id)
+            pass
+        await callsmusic.pytgcalls.leave_group_call(chat_id)
         await _.send_message(
             message.chat.id,
             "✅ __The userbot has disconnected from voice chat.__"
