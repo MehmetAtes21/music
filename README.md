@@ -1,9 +1,6 @@
 <h2 align="centre">Telegram Sohbet Mp3 Oynatıcı 🎵</h2>
 
-### Telegram grublarının sesli Sohbetlerinde müzik çalar. 
 ### Güncellendi aktif.... 😇
-
-
 <p align="center">
   <img src="https://telegra.ph/file/a4fa687ed647cfef52402.jpg">
 </p> 
