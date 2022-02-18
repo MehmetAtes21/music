@@ -42,7 +42,7 @@ async def stop(_, message: Message):
         pass
 
     await callsmusic.pytgcalls.leave_group_call(message.chat.id)
-    await message.reply_text("⏹️ **Müzik durduruldu!**\n\n• **Userbot'un sesli sohbet bağlantısı kesildi**")
+    await message.reply_text("❎ **Müzik durduruldu!**\n\n• **Userbot'un sesli sohbet bağlantısı kesildi**")
 
 
 @Client.on_message(command(["atla"]) & other_filters)
@@ -69,7 +69,7 @@ async def atla(_, message: Message):
                     ),
                 ),
             )
-    await message.reply_text("🚧 Sıradaki parçaya geçildi...")
+    await message.reply_text("➡️ Sıradaki parçaya geçildi.")
 
 
 # Yetki Vermek için (ver) Yetki almak için (al) komutlarını ekledim.
