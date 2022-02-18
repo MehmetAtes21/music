@@ -12,7 +12,7 @@
 <h3>Yeni Eklenen 💡</h3>
 
 - Bazı omutların açıklamasını otomatik silme. 
-- atla - durdur - devam - son
+- atla - durdur - devam 🤔
 ### Komutlar Genel 🍭
 - `/play` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
 - `/play` - istediğiniz şarkıyı çal
