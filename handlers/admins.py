@@ -46,7 +46,7 @@ async def stop(_, message: Message):
     for x in callsmusic.pytgcalls.active_calls:
         ACTV_CALLS.append(int(x.chat_id))
     if int(chat_id) not in ACTV_CALLS:
-        await message.reply_text("❌ **no music is currently playing**")
+        await message.reply_text("❌ **Şu anda müzik çalmıyor**")
     else:
         try:
             queues.clear(chat_id)
@@ -55,7 +55,7 @@ async def stop(_, message: Message):
         await callsmusic.pytgcalls.leave_group_call(chat_id)
         await _.send_message(
             message.chat.id,
-            "✅ __The userbot has disconnected from voice chat.__"
+            "✅ __Userbot sesli sohbet bağlantısını kesti.__"
         )
     
 @Client.on_message(command(["atla"]) & other_filters)
