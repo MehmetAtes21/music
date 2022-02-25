@@ -199,7 +199,7 @@ async def play(_, message: Message):
         [
             [
                 InlineKeyboardButton("📚 Bilgi", url=f"https://t.me/efsanestar_bot"),
-                InlineKeyboardButton("📮 Kanal", url=f"https://t.me/Sohbetdestek"),
+                InlineKeyboardButton(" Kanal", url=f"https://t.me/Sohbetdestek"),
             ],[
                 InlineKeyboardButton("✨ Kapat", callback_data="cls"),
             ],
@@ -286,7 +286,7 @@ async def play(_, message: Message):
         position = await queues.put(message.chat.id, file=file_path)
         await message.reply_photo(
         photo="final.png",
-        caption="**🎵 şᴀʀᴋɪ:** {}\n**🕒 ꜱüʀᴇ:** {} min\n**👉 ᴇᴋʟᴇʏᴇɴ:** {}\n\n**🚧 Kuyruğa Atılmış Konum:** {}".format(
+        caption="**🎵 şᴀʀᴋɪ:** {}\n**🕒 ꜱüʀᴇ:** {} min\n**👉 ᴇᴋʟᴇʏᴇɴ:** {}\n\n**🚧 Parça Konumu:** {}".format(
         title, duration, message.from_user.mention(), position
         ),
         reply_markup=keyboard)
