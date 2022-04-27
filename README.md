@@ -35,12 +35,4 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmetbaba55/EfsaneMusic)
 
-<h4> Railway ile Kurulum Yap </h4>
-
-- Site url
-
-➡️ https://railway.app/  
-
-#### [SESSION ALMAK İÇİN TIKLA](https://t.me/Sitringsison_bot)
----------------------- 
-- 18 Şubat  Aktif Halen çalışıyor. Mükemmel ses.. Akışı.... 
+- Hatalar giderildi. Halen dimdik çalışmakta olan sade bir yazılım Müzik botudur. 
