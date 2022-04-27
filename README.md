@@ -8,12 +8,13 @@
 <h3>Sürümler 📮</h3>
 
 - pyrogram version 0.8.6
-- sohbet ve Kullanıcı id bilgileri çıkartma bilgisi eklendi. 
 
 <h3>Yeni Eklenen 💡</h3>
 
 - Bazı omutların açıklamasını otomatik silme. 
 - atla - durdur - devam 🤔
+- sohbet ve Kullanıcı (id) bilgileri çıkartma bilgisi eklendi. 
+
 ### Komutlar Genel 🍭
 - `/play` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
 - `/play` - istediğiniz şarkıyı çal
