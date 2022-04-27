@@ -8,6 +8,7 @@
 <h3>Sürümler 📮</h3>
 
 - pyrogram version 0.8.6
+- sohbet ve Kullanıcı id bilgileri çıkartma bilgisi eklendi. 
 
 <h3>Yeni Eklenen 💡</h3>
 
