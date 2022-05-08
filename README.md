@@ -44,8 +44,7 @@
 Bu botu barındırmanın ikinci en kolay yolu, Okteto Cloud'da Dağıt
 ---------------------------------------------
 
-<h4>🔺 Genel 🔻</h4>
 
 - Hatalar giderildi. Halen dimdik çalışmakta olan sade bir yazılım Müzik botudur. 
 
-- Okteto ile value şeklinde appjson içini doldurun.. Otomatik kurulum yapar. 
+- Okteto ile value şeklinde appjson 👉 Bilgilerini doldurun.. Otomatik kurulum yapar. 
