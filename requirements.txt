@@ -1,5 +1,5 @@
-pyrogram==1.4.16
-py-tgcalls==0.8.6 
+pyrogram==1.4.12
+py-tgcalls==0.8.3
 TgCrypto
 git+https://github.com/Sorrybabe/downloader
 python-dotenv
