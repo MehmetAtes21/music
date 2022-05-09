@@ -22,7 +22,7 @@ async def start(_, message: Message):
                         "🇹🇷 𝐀𝐬𝐢𝐬𝐭𝐚𝐧", url="https://t.me/SessizMusicAsistan"
                     ),
                     InlineKeyboardButton(
-                        "📝 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/StarBotDestek"
+                        "📝 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/trk_milleti_SA"
                     )
                 ],
                 [
