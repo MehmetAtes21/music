@@ -199,7 +199,7 @@ async def play(_, message: Message):
         [
             [
                 InlineKeyboardButton("📚 Bilgi", url=f"https://t.me/StarBotKanal"),
-                InlineKeyboardButton("📝 Grub", url=f"https://t.me/StarBotDestek"),
+                InlineKeyboardButton("📝 Grub", url=f"https://t.me/SohbetGoVip"),
             ],[
                 InlineKeyboardButton("✨ Kapat", callback_data="cls"),
             ],
@@ -264,7 +264,7 @@ async def play(_, message: Message):
         [
             [
                 InlineKeyboardButton("📚 Bilgi", url=f"https://t.me/Starbotkanal"),
-                InlineKeyboardButton("📝 Grub", url=f"https://t.me/StarBotDestek"),
+                InlineKeyboardButton("📝 Grub", url=f"https://t.me/SohbetGoVip"),
             ],[
                 InlineKeyboardButton("✨ Kapat", callback_data="cls"),
             ],
