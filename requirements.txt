@@ -1,4 +1,4 @@
-pyrogram==1.4.16
+pyrogram==1.4.12
 py-tgcalls==0.9.0
 TgCrypto
 git+https://github.com/Sorrybabe/downloader
