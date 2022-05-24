@@ -14,12 +14,12 @@ async def start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🎉 𝐁𝐞𝐧𝐢 𝐆𝐫𝐮𝐛𝐚 𝐄𝐤𝐥𝐞 🎉", url=f"https://t.me/MajesteMusicRoBot?startgroup=true"
+                        "🎉 𝐁𝐞𝐧𝐢 𝐆𝐫𝐮𝐛𝐚 𝐄𝐤𝐥𝐞 🎉", url=f"https://t.me/Suskunlarmusicrobot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🇹🇷 𝐀𝐬𝐢𝐬𝐭𝐚𝐧", url="https://t.me/MajesteMusicAsistan"
+                        "🇹🇷 𝐀𝐬𝐢𝐬𝐭𝐚𝐧", url="https://t.me/suskunalarasistan"
                     ),
                     InlineKeyboardButton(
                         "📝 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/sessizlerkurucu"
@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "📚 𝐊𝐨𝐦𝐮𝐭𝐥𝐚𝐫" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "📝 𝐊𝐚𝐧𝐚𝐥", url=f"https://t.me/majestebotlar"
+                        "📝 𝐊𝐚𝐧𝐚𝐥", url=f"https://t.me/Suskunlarkanali"
                     )
                 ]
                 
@@ -124,12 +124,12 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🎉 𝐁𝐞𝐧𝐢 𝐆𝐫𝐮𝐛𝐚 𝐄𝐤𝐥𝐞 🎉", url=f"https://t.me/MajesteMusicRoBot?startgroup=true"
+                        "🎉 𝐁𝐞𝐧𝐢 𝐆𝐫𝐮𝐛𝐚 𝐄𝐤𝐥𝐞 🎉", url=f"https://t.me/@uskunlarmusicrobot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🇹🇷 𝐀𝐬𝐢𝐬𝐭𝐚𝐧", url="https://t.me/MajesteMusicAsistan"
+                        "🇹🇷 𝐀𝐬𝐢𝐬𝐭𝐚𝐧", url="https://t.me/suskunalarasistan"
                     ),
                     InlineKeyboardButton(
                         "📝 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/sessizlerkurucu"
@@ -140,7 +140,7 @@ async def cbstart(_, query: CallbackQuery):
                         "📚 𝐊𝐨𝐦𝐮𝐭𝐥𝐚𝐫" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "📝 𝐊𝐚𝐧𝐚𝐥", url=f"https://t.me/majestebotlar"
+                        "📝 𝐊𝐚𝐧𝐚𝐥", url=f"https://t.me/Suskunlarkanali"
                     )
                 ]
                 
