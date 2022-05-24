@@ -1,9 +1,6 @@
 <h2 align="centre">Telegram Sohbet Mp3 Oynatıcı 🎵</h2>
 
 ### Güncellendi aktif.... 😇
-<p align="center">
-  <img src="https://telegra.ph/file/a4fa687ed647cfef52402.jpg">
-</p> 
 
 <h3>Sürümler 📮</h3>
 
@@ -16,21 +13,21 @@
 - sohbet ve Kullanıcı (id) bilgileri çıkartma bilgisi eklendi. 
 
 ### Komutlar Genel 🍭
-- `/play` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
-- `/play` - istediğiniz şarkıyı çal
+- `/oynat` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
+- `/oynat` - istediğiniz şarkıyı çal
 - `/bul` - istediğiniz şarkıları hızlı bir şekilde indirin 
 - `/ara` - youtube'da ayrıntıları içeren videoları arama
 
 #### Yalnızca yöneticiler 
 - `/ver` - üyeler için extra yetki 
 - `/al` - üyeler için verilen yetki alınır (Herkes için olan komutları kullanır) 
-- `/pause` - şarkı çalmayı duraklatma 
-- `/resume` - şarkı çalmaya devam et 
-- `/skip` - sonraki şarkıyı çal 
-- `/end` - müzik çalmayı durdurma
+- `/durdur` - şarkı çalmayı duraklatma 
+- `/devam` - şarkı çalmaya devam et 
+- `/atla` - sonraki şarkıyı çal 
+- `/son` - müzik çalmayı durdurma
 - `/reload` - Yönetici listesini günceller
 #### Grubunuza Almak için.. 
-- `/asistan` - Müzik asistanı  grubunuza katılır. 
+- `/katil` - Müzik asistanı  grubunuza katılır. 
 - `/ayril` - Müzik asistanı grubunuzu terk eder. 
 
 <h4>🔺 Herokuya Dağıt 🔻</h4>
