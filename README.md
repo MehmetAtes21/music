@@ -1,4 +1,3 @@
-<h2 align="centre">Telegram Müzik Botu 🎵</h2>
 
 # Müzik Bot 🇹🇷
 [Github Müzik Bot](https://github.com/MehmetAtes21/Music) Telegram Müzik Botu .
@@ -17,20 +16,17 @@
 - Bu botu barındırmanın ikinci en kolay yolu, Okteto Cloud'da Dağıt. 
 
 
-### Komutlar Genel 🍭
+### ⏳ Genel Komutlar
 - `/oynat` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
 - `/oynat` - istediğiniz şarkıyı çal
 - `/bul` - istediğiniz şarkıları hızlı bir şekilde indirin 
-- `/ara` - youtube'da ayrıntıları içeren videoları arama
-
-#### Yalnızca yöneticiler 
-- `/ver` - üyeler için extra yetki 
-- `/al` - üyeler için verilen yetki alınır (Herkes için olan komutları kullanır) 
+- `/ara` - youtube'da ayrıntıları içeren videoları arama 
 - `/durdur` - şarkı çalmayı duraklatma 
 - `/devam` - şarkı çalmaya devam et 
 - `/atla` - sonraki şarkıyı çal 
 - `/son` - müzik çalmayı durdurma
-- `/reload` - Yönetici listesini günceller
-#### Grubunuza Almak için.. 
+- `/reload` - Yönetici listesini günceller. 
 - `/katil` - Müzik asistanı  grubunuza katılır. 
 - `/ayril` - Müzik asistanı grubunuzu terk eder. 
+- `/ver` - üyeler için extra yetki 
+- `/al` - üyeler için verilen yetki alınır (Herkes için olan komutları kullanır) 
