@@ -1,16 +1,21 @@
-<h2 align="centre">Telegram Sohbet Mp3 Oynatıcı 🎵</h2>
+<h2 align="centre">Telegram Müzik Botu 🎵</h2>
 
-### Güncellendi aktif.... 😇
+# Müzik Bot 🇹🇷
+[Github Müzik Bot](https://github.com/MehmetAtes21/Music) Telegram Müzik Botu .
 
-<h3>Sürümler 📮</h3>
+# Support 
+- [Telegram Support](https://t.me/StarBotKanal) Telegram Support Grub .
 
-- pyrogram version 0.9.0 
+### 🚀 Deploy ile Kurulum
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MehmetAtes21/Music)
+-
 
-<h3>Yeni Eklenen 💡</h3>
+### 🚀 Okteto ile Kurulum  
 
-- Bazı omutların açıklamasını otomatik silme. 
-- atla - durdur - devam 🤔
-- sohbet ve Kullanıcı (id) bilgileri çıkartma bilgisi eklendi. 
+<p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/MehmetAtes21/Music"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200" height="35.45"/></a></p>
+
+- Bu botu barındırmanın ikinci en kolay yolu, Okteto Cloud'da Dağıt. 
+
 
 ### Komutlar Genel 🍭
 - `/oynat` - şarkı çalmak için youtube url'sine veya şarkı dosyasına yanıt verme
@@ -29,18 +34,3 @@
 #### Grubunuza Almak için.. 
 - `/katil` - Müzik asistanı  grubunuza katılır. 
 - `/ayril` - Müzik asistanı grubunuzu terk eder. 
-
-<h4>🔺 Herokuya Dağıt 🔻</h4>
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MehmetAtes21/Music)
-
-
-<h4>🔺 Okteto ile Kurulum 🔻</h4> 
-
-<p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/MehmetAtes21/Music"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200" height="35.45"/></a></p>
-
-- Bu botu barındırmanın ikinci en kolay yolu, Okteto Cloud'da Dağıt. 
-
-- Hatalar giderildi. Halen dimdik çalışmakta olan sade bir yazılım Müzik botudur. 
-
-- Okteto ile value şeklinde appjson 👉 Bilgilerini doldurun.. Otomatik kurulum yapar. 
