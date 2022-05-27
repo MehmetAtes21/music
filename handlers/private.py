@@ -14,15 +14,15 @@ async def start(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🎉 𝐁𝐞𝐧𝐢 𝐆𝐫𝐮𝐛𝐚 𝐄𝐤𝐥𝐞 🎉", url=f"https://t.me/Suskunlarmusicrobot?startgroup=true"
+                        "🎉 𝐁𝐞𝐧𝐢 𝐆𝐫𝐮𝐛𝐚 𝐄𝐤𝐥𝐞 🎉", url=f"https://t.me/SohbetMusicsBot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🇹🇷 𝐀𝐬𝐢𝐬𝐭𝐚𝐧", url="https://t.me/suskunalarasistan"
+                        "🇹🇷 𝐀𝐬𝐢𝐬𝐭𝐚𝐧", url="https://t.me/SohbetMusicAsistan1"
                     ),
                     InlineKeyboardButton(
-                        "📝 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/sessizlerkurucu"
+                        "📝 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/Hayiboo"
                     )
                 ],
                 [
@@ -30,7 +30,7 @@ async def start(_, message: Message):
                         "📚 𝐊𝐨𝐦𝐮𝐭𝐥𝐚𝐫" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "📝 𝐊𝐚𝐧𝐚𝐥", url=f"https://t.me/Suskunlarkanali"
+                        "📝 𝐊𝐚𝐧𝐚𝐥", url=f"https://t.me/StarBotKanal"
                     )
                 ]
                 
@@ -53,7 +53,7 @@ async def bilgi(_, message: Message):
                          "🗯️ 𝖠𝗇𝖺 𝖬𝖾𝗇𝗎 ", callback_data="cbstart")
                  ],[
                      InlineKeyboardButton(
-                         "📩 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/sessizlerkurucu")
+                         "📩 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/Hayiboo")
                  ]
              ]
          )
@@ -75,7 +75,7 @@ async def cbbilgi(_, query: CallbackQuery):
         ],
         [
           InlineKeyboardButton(
-            "📩 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/sessizlerkurucu")
+            "📩 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/Hayiboo")
         ]
       ]
      ))
@@ -88,7 +88,7 @@ async def herkes(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "📩 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/sessizlerkurucu")
+                         "📩 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/Hayiboo")
                  ],
                  [
                      InlineKeyboardButton(
@@ -106,7 +106,7 @@ async def admin(_, query: CallbackQuery):
              [
                  [
                      InlineKeyboardButton(
-                         "⚙ Geliştirici", url="https://t.me/sessizlerkurucu")
+                         "⚙ Geliştirici", url="https://t.me/Hayiboo")
                  ],
                  [
                      InlineKeyboardButton(
@@ -124,15 +124,15 @@ async def cbstart(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🎉 𝐁𝐞𝐧𝐢 𝐆𝐫𝐮𝐛𝐚 𝐄𝐤𝐥𝐞 🎉", url=f"https://t.me/@uskunlarmusicrobot?startgroup=true"
+                        "🎉 𝐁𝐞𝐧𝐢 𝐆𝐫𝐮𝐛𝐚 𝐄𝐤𝐥𝐞 🎉", url=f"https://t.me/SohbetMusicsBot?startgroup=true"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🇹🇷 𝐀𝐬𝐢𝐬𝐭𝐚𝐧", url="https://t.me/suskunalarasistan"
+                        "🇹🇷 𝐀𝐬𝐢𝐬𝐭𝐚𝐧", url="https://t.me/SohbetMusicAsistan1"
                     ),
                     InlineKeyboardButton(
-                        "📝 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/sessizlerkurucu"
+                        "📝 𝐒𝐚𝐡𝐢𝐩", url="https://t.me/Hayiboo"
                     )
                 ],
                 [
@@ -140,7 +140,7 @@ async def cbstart(_, query: CallbackQuery):
                         "📚 𝐊𝐨𝐦𝐮𝐭𝐥𝐚𝐫" , callback_data= "cbbilgi"
                     ),
                     InlineKeyboardButton(
-                        "📝 𝐊𝐚𝐧𝐚𝐥", url=f"https://t.me/Suskunlarkanali"
+                        "📝 𝐊𝐚𝐧𝐚𝐥", url=f"https://t.me/StarBotKanal"
                     )
                 ]
                 
