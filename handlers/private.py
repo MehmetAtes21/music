@@ -84,7 +84,7 @@ async def herkes(_, query: CallbackQuery):
                  ],
                  [
                      InlineKeyboardButton(
-                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️", callback_data="cbbilgi")
+                         "⬅️ 𝖦𝖾𝗋𝗂 ⬅️", callback_data="cbstart")
                  ] 
              ]
          )
