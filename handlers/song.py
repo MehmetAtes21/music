@@ -27,7 +27,7 @@ def bul(client, message):
 
     query = "".join(" " + str(i) for i in message.command[1:])
     print(query)
-    m = message.reply("🔎 Arıyorum...")
+    m = message.reply("•> **Arıyorum...**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=5).to_dict()
@@ -45,17 +45,17 @@ def bul(client, message):
 
     except Exception as e:
         m.edit(
-            "❌ Hiçbir şey bulamadım. Pardon.\n\nBaşka bir anahtar kelime deneyin veya belki düzgün hecele."
+            "•> **Hiçbir şey bulamadım .**"
         )
         print(str(e))
         return
-    m.edit("`Şarkı indiriliyor, lütfen bekleyin...⏱`")
+    m.edit("•> **Şarkı indiriliyor .**")
     try:
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = f"☑️ **İsmi**: [{title[:35]}]({link})\n🎬 **Kaynak**: YouTube\n⏱️ **Süre**: `{duration}`\n👁‍🗨 **Görünümler**: `{views}`\n📤 **Tarafından**: **YOUTUBE**"
+        rep = f"▶️ **Şarkı**: [{title[:35]}]({link})\n🔖 **Kaynak**: **YouTube**\n⏳ **Süre**: `{duration}`\n🔗 **Görünümler**: `{views}`\n✍🏻 **Tarafından**: @StarMuzikBot"
         secmul, dur, dur_arr = 1, 0, duration.split(":")
         for i in range(len(dur_arr) - 1, -1, -1):
             dur += int(dur_arr[i]) * secmul
@@ -107,14 +107,14 @@ async def vsong(client, message):
     except Exception as e:
         print(e)
     try:
-        msg = await message.reply("📥 **video indiriyorum...**")
+        msg = await message.reply("•> **Video İndiriyorum...**")
         with YoutubeDL(ydl_opts) as ytdl:
             ytdl_data = ytdl.extract_info(link, download=True)
             file_name = ytdl.prepare_filename(ytdl_data)
     except Exception as e:
         return await msg.edit(f"🚫 **Hata:** {e}")
     preview = wget.download(thumbnail)
-    await msg.edit("📤 **video yüklüyorum...**")
+    await msg.edit("•> **Video Yüklüyorum...**")
     await message.reply_video(
         file_name,
         duration=int(ytdl_data["duration"]),
