@@ -90,29 +90,29 @@ async def atla(_, message: Message):
         await a.delete()
 
 # Yetki Vermek için (ver) Yetki almak için (al) komutlarını ekledim.
-# Gayet güzel çalışıyor. @Mahoaga Tarafından Eklenmiştir. 
-@Client.on_message(command("ver") & other_filters)
+# Gayet güzel çalışıyor. @Hayiboo Tarafından Eklenmiştir. 
+@Client.on_message(command("auth") & other_filters)
 @authorized_users_only
 async def authenticate(client, message):
     global admins
     if not message.reply_to_message:
-        await message.reply("Kullanıcıya Yetki Vermek için yanıtlayınız!")
+        await message.reply("**•> Kullanıcı Mesajini Yanıtlayın **!")
         return
     if message.reply_to_message.from_user.id not in admins[message.chat.id]:
         new_admins = admins[message.chat.id]
         new_admins.append(message.reply_to_message.from_user.id)
         admins[message.chat.id] = new_admins
-        await message.reply("kullanıcı yetkili.")
+        await message.reply("•> **Kullanıcı Yetkili** .")
     else:
-        await message.reply("✔ Kullanıcı Zaten Yetkili!")
+        await message.reply("✔ **Kullanıcı Zaten Yetkili **!")
 
 
-@Client.on_message(command("al") & other_filters)
+@Client.on_message(command("unauth") & other_filters)
 @authorized_users_only
 async def deautenticate(client, message):
     global admins
     if not message.reply_to_message:
-        await message.reply("✅ Kullanıcıyı yetkisizleştirmek için mesaj atınız!")
+        await message.reply("•> **Kullanıcı Mesajini Yanıtlayın** !")
         return
     if message.reply_to_message.from_user.id in admins[message.chat.id]:
         new_admins = admins[message.chat.id]
@@ -120,7 +120,7 @@ async def deautenticate(client, message):
         admins[message.chat.id] = new_admins
         await message.reply("kullanıcı yetkisiz")
     else:
-        await message.reply("✅ Kullanıcının yetkisi alındı!")
+        await message.reply("•> **Kullanıcının Yetkisi Alındı** !")
 
 
 # Sesli sohbet için 0-200 arası yeni komut eklenmiş oldu. 
