@@ -1,6 +1,6 @@
 
 # Müzik Bot 🇹🇷
-- [Müzik Bot](https://t.me/SohbetMusicsBot) Telegram Müzik Bot .
+- [Müzik Bot](https://t.me/StarMuzikBot) Telegram Müzik Bot .
 
 # Support 
 - [Support](https://t.me/StarBotKanal) Telegram Support Grub .
