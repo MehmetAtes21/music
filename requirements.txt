@@ -15,4 +15,5 @@ wget
 ffmpeg-python
 Pillow==9.1.0
 ujson
-git+https://github.com/Sorrybabe/downloader
+yt-dlp
+yt-dlp
