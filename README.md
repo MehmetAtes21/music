@@ -1,30 +1,59 @@
-
-# Müzik Bot 🇹🇷
-- [Müzik Bot](https://t.me/StarMuzikBot) Telegram Müzik Bot .
-
-# Support 
-- [Support](https://t.me/StarBotKanal) Telegram Support Grub .
+# 🔊 MusicUserBot
+## <a href="https://t.me/Ballasresmi">👨🏻‍💻 Ballasresmi</a>
 
 
-### ⏳ Genel Komutlar
-- `/oynat` •> **ɪsᴛᴇᴅɪɢɪɴ sᴀʀᴋɪʏɪ ᴏʏɴᴀᴛ**
-- `/bul` •> **ɪsᴛᴇᴅɪɢɪɴ sᴀʀᴋɪʏɪ ɪɴᴅɪʀ** 
-- `/durdur` •> **sᴀʀᴋɪʏɪ ᴅᴜʀᴅᴜʀ**
-- `/devam` •> **sᴀʀᴋɪʏɪ sᴜʀᴅᴜʀ**
-- `/atla` •> **sᴀʀᴋɪʏɪ ᴀᴛʟᴀʀ** 
-- `/son` •> **sᴀʀᴋɪʏɪ sᴏɴʟᴀɴᴅɪʀ**
-- `/reload` •> **ᴀᴅᴍɪɴ ʟɪsᴛᴇsɪɴɪ ɢᴜɴᴄᴇʟʟᴇʀ** 
-- `/katil` •> **ᴀsɪsᴛᴀɴ ɢʀᴜʙᴀ ᴋᴀᴛɪʟɪʀ**
-- `/ayril` •> **ᴀsɪsᴛᴀɴ ɢʀʏʙᴛᴀɴ ᴀʏʀɪʟɪʀ**
-- `/auth` •> **ᴋᴜʟʟᴀᴄɪʏɪ ʏᴇᴛᴋɪʟᴇɴᴅɪʀɪʀ**
-- `/unauth` •> **ᴋᴜʟʟᴀɴɪᴄɪʏɪ ʏᴇᴛᴋɪsɪᴢʟᴇsᴛɪʀɪʀ**
-- `/clean` •> **ʙᴏᴛᴜɴ ɪᴄɪɴᴅᴇᴋɪ ᴏɴᴇᴍsɪᴢ ᴠᴇʀɪʟᴇʀɪ ᴛᴇᴍɪᴢʟᴇʀ**
+
+## ℹ️ Haqqında
+MusicUserBot vaistəsiylə telegramda özünüzə məxsus səsli söhbət botuna sahib olacaqsınız
+
+## ⬇️ Qurulum
+###### Sizə lazım olanlar;
+1) Fake hesab
+2) API_ID API_HASH
+3) Session kodu
+##### Başlayaq
+1) Fake hesab açmağı yəginki bilirsiz
+2) API_ID və API_HASH üçün Bu linkə daxil olun https://my.telegram.org/ 
+3) Fake hesabın nömrəsini yazın 
+4) Hesaba gedən kodu sayta yazın və hesaba giriş edin 
+5) Giriş etdikdən sonra boş xanalara nə istəsəniz yazın
+6) Ən sonda API_ID və API_HASH verəcək kopyalıyıb bir yerə qeyd edin
+7) Telegramda <a href="https://t.me/StringGentg_bot">@StringGentg_bot</a> -a daxil oluruq
+8) Start verib API_ID və API_HASH növbəylə göndəririk
+9) Ən sonda fake hesabınızın nömrəsini yazın və hesaba gedən doğrulama kodunu yazın (doğrulama kodu yazarkən rəqəmlər arası boşluq buraxın)
+10) Və ən sonda Session kodunuz fake hesabın kaydedilmə bölməsində olacaq 
+11) Artıq hər şey tamamdır Deploy buttonuna vuraraq MusicUserBotu heroku hesabınıza deploy edin )
+12) Deploy prosesi bitdikdən sonra dynonu açmağı unutmayın
+12) Çətinliy olarsa <a href="https://t.me/RoBotlarimGroup">support</a> qrupuna yazın
+-👉 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aykhan026/MusicUserBot.git)
 
 
-### Heroku Kurulum ⏳
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MehmetAtes21/Music)
--
+## 👇 Əmrlər
+⚠️ Əmrlərdən istifadə etmək üçün UserBot qurduğunuz profillə qarşılıqlı kantakt edin
+👨🏻‍🦱 İstifadəçilər üçün
+```sh
+.sing:      *- Cavabladığınız musiqini səsli söhbətə qoşar, Playlisti yoxlamaq üçündə istifadə olunur
+.now:       *- Oxunan musiqinin neçənci saniyədə olsuğunu göstərər..
+.cmd:       *- Bütün əmrləri göstərir.
 
-<p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/MehmetAtes21/Music"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200" height="35.45"/></a></p>
+```
+👮‍♂️ Admin və Sahib üçün 
+```sh
+- !on : Səsli söhbətə qoşulacaq.
+- !off : Səsli söhbətdən çıxacaq.
+- !endvc : Musiqini dayandıracaq.
+- !group : Olduğu qrupları göstərəcək.
+- !pause : Musiqini müvəqqəti dayandır.
+- !resume : Dayanmış musiqini yenidən ifa et.
+- !mutevc : Botu əssizə al.
+- !unmutevc : Botun səsini aç.
+- !replay : Musiqini Təkrarla
+- !skip : Növbəti musiqiyə keçid et, Belədə istifadə edə bilərsiniz "skip 2" musiqinin sıra nömrəsinə uyğun.
+- !raw : Temp faylları təmizlə. 
+- !ryuk : Serverdəki ping i yoxla.
+```
+#### Yeniləmələri görmək üçün <a href="https://t.me/Ballasresmi">kanala</a> abunə olaq
+👨🏻‍💻 Sahib <a href="https://t.me/Ballasresmi">BOT_RAMO</a>
 
-- Bu botu barındırmanın ikinci en kolay yolu, Okteto Cloud'da Dağıt. 
+⚠️ Çətinliy olarsa <a href="https://t.me/Ballasresmi">support</a> qrupuna yazın
+
