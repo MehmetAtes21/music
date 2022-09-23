@@ -90,7 +90,7 @@ async def atla(_, message: Message):
         await a.delete()
 
 # Yetki Vermek için (ver) Yetki almak için (al) komutlarını ekledim.
-# Gayet güzel çalışıyor. @Hayiboo Tarafından Eklenmiştir. 
+# Gayet güzel çalışıyor. @BOT_RAMO Tarafından Eklenmiştir. 
 @Client.on_message(command("auth") & other_filters)
 @authorized_users_only
 async def authenticate(client, message):
