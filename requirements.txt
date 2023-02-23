@@ -15,5 +15,4 @@ wget
 ffmpeg-python
 Pillow==9.1.0
 ujson
-yt-dlp
-yt-dlp
+https://github.com/MehmetAtes21/test
