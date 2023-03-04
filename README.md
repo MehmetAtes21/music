@@ -1,10 +1,14 @@
 
-# Müzik Bot 🇹🇷
-- [Müzik Bot](https://t.me/StarMuzikBot) Telegram Müzik Bot .
+# Music Bot
+### - [Githup Repo](https://github.com/MehmetAtes21/music) Music Bot
+
+------------------------
 
 # Support 
-- [Support](https://t.me/StarBotKanal) Telegram Support Grub .
+### - [Channel](https://t.me/StarBotKanal) Telegram Channel
+### - [Support](https://t.me/BotDestekTR) Telegram Support
 
+------------------------
 
 ### ⏳ Genel Komutlar
 - `/oynat` •> **ɪsᴛᴇᴅɪɢɪɴ sᴀʀᴋɪʏɪ ᴏʏɴᴀᴛ**
@@ -27,4 +31,4 @@
 
 <p align="center"><a href="https://cloud.okteto.com/deploy?repository=https://github.com/MehmetAtes21/Music"><img src="https://img.shields.io/badge/Deploy%20To%20Okteto-informational?style=for-the-badge&logo=Okteto" width="200" height="35.45"/></a></p>
 
-- Bu botu barındırmanın ikinci en kolay yolu, Okteto Cloud'da Dağıt. 
+### - Bu botu barındırmanın ikinci en kolay yolu, Okteto Cloud'da Dağıt. 
