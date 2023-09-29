@@ -1,5 +1,5 @@
 pyrogram==1.4.16
-py-tgcalls==0.9.7
+git+https://github.com/pytgcalls/pytgcalls
 TgCrypto
 python-dotenv
 youtube_dl
