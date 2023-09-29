@@ -24,4 +24,4 @@ async def join_handler(_, message):
     await group_call.start(message.chat.id)
 
 
-app.run()
+run = pytgcalls.start
