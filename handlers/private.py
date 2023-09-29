@@ -75,7 +75,7 @@ async def cbstart(_, query: CallbackQuery):
                         "📚 𝖪𝗈𝗆𝗎𝗍𝗅𝖺𝗋" , callback_data= "herkes"
                     ),
                     InlineKeyboardButton(
-                        "🇹🇷 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url=ff"https://t.me/{BOT_CHANNEL}"
+                        "🇹🇷 𝖢𝗁𝖺𝗇𝗇𝖾𝗅", url=f"https://t.me/{BOT_CHANNEL}"
                     )
                 ],
                 [
