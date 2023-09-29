@@ -4,12 +4,6 @@
 
 ------------------------
 
-# Support 
-### - [Channel](https://t.me/StarBotKanal) Telegram Channel
-### - [Support](https://t.me/BotDestekTR) Telegram Support
-
-------------------------
-
 ### ⏳ Genel Komutlar
 - `/oynat` •> **ɪsᴛᴇᴅɪɢɪɴ sᴀʀᴋɪʏɪ ᴏʏɴᴀᴛ**
 - `/bul` •> **ɪsᴛᴇᴅɪɢɪɴ sᴀʀᴋɪʏɪ ɪɴᴅɪʀ** 
