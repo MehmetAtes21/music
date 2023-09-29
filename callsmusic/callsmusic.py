@@ -4,7 +4,7 @@ from pytgcalls.types import Update
 from pytgcalls.types.input_stream import InputStream
 from pytgcalls.types.input_stream import InputAudioStream
 from config import API_HASH, API_ID, SESSION_NAME
-from pyrogram import Client
+from pyrogram import filters
 
 from . import queues
 
