@@ -1,11 +1,14 @@
-from pyrogram import Client, filters
-from pyrogram.utils import MAX_CHANNEL_ID
+from pyrogram import Client
+from pytgcalls import PyTgCalls
+from pytgcalls.types import Update
+from pytgcalls.types.input_stream import InputStream
+from pytgcalls.types.input_stream import InputAudioStream
+from config import API_HASH, API_ID, SESSION_NAME
 
-from pytgcalls import GroupCallFactory
+from . import queues
 
-app = Client('pytgcalls')
-group_call = GroupCallFactory(app).get_file_group_call('input.raw')
-
+client = Client(SESSION_NAME, API_ID, API_HASH)
+pytgcalls = PyTgCalls(client)
 
 @group_call.on_network_status_changed
 async def on_network_changed(context, is_connected):
