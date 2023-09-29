@@ -1,5 +1,5 @@
 pyrogram==1.4.16
-py-tgcalls==0.8.6
+py-tgcalls==1.0.0
 TgCrypto
 python-dotenv
 youtube_dl
@@ -16,4 +16,3 @@ ffmpeg-python
 Pillow==9.5.0
 ujson
 git+https://github.com/MehmetAtes21/Loading.git
-yt-dlp
