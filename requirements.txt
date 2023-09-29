@@ -7,13 +7,13 @@ youtube_search_python
 requests
 aiohttp
 aiofiles
-asyncio==3.4.3
+asyncio
 youtube_search
 python-arq
 search_engine_parser
 wget 
 ffmpeg-python
-Pillow==9.1.0
+Pillow==9.5.0
 ujson
 git+https://github.com/MehmetAtes21/Loading.git
 yt-dlp
