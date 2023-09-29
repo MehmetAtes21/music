@@ -88,9 +88,7 @@ async def atla(_, message: Message):
         a = await message.reply_text("•> **Şarkı Atlatıldı.**")
         await sleep(3)
         await a.delete()
-
-# Yetki Vermek için (ver) Yetki almak için (al) komutlarını ekledim.
-# Gayet güzel çalışıyor. @Hayiboo Tarafından Eklenmiştir. 
+ 
 @Client.on_message(command("auth") & other_filters)
 @authorized_users_only
 async def authenticate(client, message):
@@ -122,8 +120,7 @@ async def deautenticate(client, message):
     else:
         await message.reply("•> **Kullanıcının Yetkisi Alındı** !")
 
-
-# Sesli sohbet için 0-200 arası yeni komut eklenmiş oldu. 
+ 
 @Client.on_message(command(["ses"]) & other_filters)
 @authorized_users_only
 async def change_ses(client, message):
