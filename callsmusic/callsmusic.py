@@ -12,7 +12,7 @@ pytgcalls = PyTgCalls(client)
 
 @group_call.on_network_status_changed
 async def on_network_changed(context, is_connected):
-    chat_id = MAX_CHANNEL_ID - context.full_chat.id
+    chat_id = -1001983841726 - context.full_chat.id
     if is_connected:
         await app.send_message(chat_id, 'Successfully joined!')
     else:
