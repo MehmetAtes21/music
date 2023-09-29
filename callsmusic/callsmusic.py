@@ -1,32 +1,24 @@
-from pyrogram import Client
-from pytgcalls import PyTgCalls
-from pytgcalls.types import Update
-from pytgcalls.types.input_stream import InputStream
-from pytgcalls.types.input_stream import InputAudioStream
-from config import API_HASH, API_ID, SESSION_NAME
+from pyrogram import Client, filters
+from pyrogram.utils import MAX_CHANNEL_ID
 
-from . import queues
+from pytgcalls import GroupCallFactory
 
-client = Client(SESSION_NAME, API_ID, API_HASH)
-pytgcalls = PyTgCalls(client)
+app = Client('pytgcalls')
+group_call = GroupCallFactory(app).get_file_group_call('input.raw')
 
 
-@pytgcalls.on_stream_end()
-async def on_stream_end(client: PyTgCalls, update: Update) -> None:
-    chat_id = update.chat_id
-    queues.task_done(chat_id)
-
-    if queues.is_empty(chat_id):
-        await pytgcalls.leave_group_call(chat_id)
+@group_call.on_network_status_changed
+async def on_network_changed(context, is_connected):
+    chat_id = MAX_CHANNEL_ID - context.full_chat.id
+    if is_connected:
+        await app.send_message(chat_id, 'Successfully joined!')
     else:
-        await pytgcalls.change_stream(
-            chat_id, 
-            InputStream(
-                InputAudioStream(
-                    queues.get(chat_id)["file"],
-                ),
-            ),
-        )
+        await app.send_message(chat_id, 'Disconnected from voice chat..')
 
 
-run = pytgcalls.start
+@app.on_message(filters.outgoing & filters.command('join'))
+async def join_handler(_, message):
+    await group_call.start(message.chat.id)
+
+
+app.run()
