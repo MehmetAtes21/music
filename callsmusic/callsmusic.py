@@ -10,8 +10,8 @@ from . import queues
 client = Client(SESSION_NAME, API_ID, API_HASH)
 pytgcalls = PyTgCalls(client)
 
-@pytgcalls.on_network_status_changed
-async def on_network_changed(context, is_connected):
+@pytgcalls.on_stream_end()
+async def on_stream_end(context, is_connected):
     chat_id = -1001983841726 - context.full_chat.id
     if is_connected:
         await app.send_message(chat_id, 'Successfully joined!')
