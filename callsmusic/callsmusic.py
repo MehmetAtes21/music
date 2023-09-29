@@ -10,7 +10,7 @@ from . import queues
 client = Client(SESSION_NAME, API_ID, API_HASH)
 pytgcalls = PyTgCalls(client)
 
-@group_call.on_network_status_changed
+@pytgcalls.on_network_status_changed
 async def on_network_changed(context, is_connected):
     chat_id = -1001983841726 - context.full_chat.id
     if is_connected:
