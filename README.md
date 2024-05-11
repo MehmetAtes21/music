@@ -1,6 +1,6 @@
 
-# Music Bot
-### - [Githup Repo](https://github.com/MehmetAtes21/music) Music Bot
+## Telegram Music Bot
+##  [ [Githup Repo](https://github.com/MehmetAtes21/music) ]
 
 ------------------------
 
